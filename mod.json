@@ -1,0 +1,10 @@
+{
+	"name": "a23_balance_for_25",
+	"version": "1.0.0",
+	"label": "Alpga 23b balance for alpha 25",
+	"description": "Play alpha 23b balance in alpha 25",
+	"dependencies": ["0ad=0.0.25"],
+	"url": "",
+	"author_name": "nani",
+	"author_profile": "https://wildfiregames.com/forum/index.php?/profile/27866-nani/"
+}
