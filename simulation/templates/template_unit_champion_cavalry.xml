@@ -1,10 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_champion">
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>7</Hack>
+        <Pierce>5</Pierce>
+        <Crush>20</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
   <Cost>
-    <BuildTime>25</BuildTime>
+    <Population>1</Population>
+    <BuildTime>30</BuildTime>
     <Resources>
-      <food>150</food>
-      <wood>80</wood>
+      <food>250</food>
+      <wood>0</wood>
+      <stone>0</stone>
       <metal>100</metal>
     </Resources>
   </Cost>
@@ -16,32 +27,16 @@
     <Max>240</Max>
   </Health>
   <Identity>
+    <GenericName>Champion Cavalry</GenericName>
     <Classes datatype="tokens">FastMoving</Classes>
     <VisibleClasses datatype="tokens">Cavalry</VisibleClasses>
-    <GenericName>Champion Cavalry</GenericName>
     <Formations datatype="tokens">
       special/formations/wedge
     </Formations>
-    <RequiredTechnology>unlock_champion_cavalry</RequiredTechnology>
   </Identity>
-  <Loot>
-    <xp>200</xp>
-    <food>15</food>
-    <wood>8</wood>
-    <metal>10</metal>
-  </Loot>
   <Position>
     <TurnRate>5</TurnRate>
   </Position>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Hack>7</Hack>
-        <Pierce>5</Pierce>
-        <Crush>20</Crush>
-      </Damage>
-    </Entity>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <walk>actor/mounted/movement/walk.xml</walk>
@@ -54,8 +49,8 @@
     <HeightOffset>7.0</HeightOffset>
   </StatusBars>
   <UnitMotion>
-    <WalkSpeed op="mul">2</WalkSpeed>
-    <RunMultiplier>1.4</RunMultiplier>
+    <WalkSpeed op="mul">2.25</WalkSpeed>
+    <RunMultiplier>2.25</RunMultiplier>
   </UnitMotion>
   <Vision>
     <Range>96</Range>

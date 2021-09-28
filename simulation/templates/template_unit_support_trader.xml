@@ -18,11 +18,6 @@
     <Tooltip>Trade resources between your own markets and those of your allies.</Tooltip>
     <Formations disable=""/>
   </Identity>
-  <Loot>
-    <xp>10</xp>
-    <food>10</food>
-    <metal>8</metal>
-  </Loot>
   <Position>
     <Anchor>pitch</Anchor>
   </Position>

@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_special">
+  <Auras datatype="tokens">
+    structures/rotary_mill
+  </Auras>
   <Cost>
     <BuildTime>100</BuildTime>
     <Resources>
@@ -12,9 +15,6 @@
     <Height>6.0</Height>
   </Footprint>
   <GarrisonHolder disable=""/>
-  <Health>
-    <Max>2000</Max>
-  </Health>
   <Identity>
     <GenericName>Rotary Mill</GenericName>
     <SelectionGroupName>template_structure_special_rotarymill</SelectionGroupName>
@@ -22,8 +22,9 @@
     <Icon>structures/rotarymill.png</Icon>
   </Identity>
   <Loot>
-    <wood>40</wood>
-    <stone>20</stone>
+    <food>50</food>
+    <wood>25</wood>
+    <stone>15</stone>
   </Loot>
   <Obstruction>
     <Static width="16.0" depth="16.0"/>

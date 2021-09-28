@@ -2,11 +2,32 @@
 <Entity parent="builder|template_unit_support">
   <Builder>
     <Rate>0.5</Rate>
+    <Entities datatype="tokens">
+      structures/{civ}/house
+      structures/{civ}/storehouse
+      structures/{civ}/farmstead
+      structures/{civ}/field
+      structures/{civ}/corral
+      structures/{civ}/outpost
+      structures/wallset_palisade
+      structures/{civ}/dock
+      structures/{civ}/barracks
+      structures/{civ}/forge
+      structures/{civ}/temple
+      structures/{civ}/market
+      structures/{civ}/defense_tower
+      structures/{civ}/wallset_stone
+      structures/{civ}/civil_centre
+      structures/{civ}/fortress
+    </Entities>
   </Builder>
   <Cost>
     <Population>0</Population>
-    <BuildTime>15</BuildTime>
+    <BuildTime>20</BuildTime>
     <Resources>
+      <food>0</food>
+      <wood>0</wood>
+      <stone>0</stone>
       <metal>50</metal>
     </Resources>
   </Cost>
@@ -15,14 +36,17 @@
     <Unhealable>true</Unhealable>
   </Health>
   <Identity>
+    <VisibleClasses datatype="tokens">Worker Slave</VisibleClasses>
     <GenericName>Slave</GenericName>
     <SelectionGroupName>template_unit_support_slave</SelectionGroupName>
     <Tooltip>Gatherer with a finite life span. Bonused at mining and lumbering.</Tooltip>
-    <VisibleClasses datatype="tokens">Worker Slave</VisibleClasses>
   </Identity>
   <Loot>
-    <xp>10</xp>
-    <metal>5</metal>
+    <xp>1</xp>
+    <food>0</food>
+    <wood>1</wood>
+    <stone>1</stone>
+    <metal>1</metal>
   </Loot>
   <ResourceGatherer>
     <MaxDistance>2.0</MaxDistance>
@@ -38,12 +62,6 @@
       <stone.ruins>5</stone.ruins>
       <metal.ore>1.0</metal.ore>
     </Rates>
-    <Capacities>
-      <food>10</food>
-      <wood>10</wood>
-      <stone>10</stone>
-      <metal>10</metal>
-    </Capacities>
   </ResourceGatherer>
   <TreasureCollector disable=""/>
   <Sound>

@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_hero">
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>10</Hack>
+        <Pierce>8</Pierce>
+        <Crush>25</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
   <Cost>
+    <BuildTime>50</BuildTime>
     <Resources>
       <food>300</food>
       <wood>200</wood>
@@ -12,12 +22,12 @@
     <Height>6.0</Height>
   </Footprint>
   <Health>
-    <Max>1200</Max>
+    <Max>1500</Max>
   </Health>
   <Identity>
-    <Classes datatype="tokens">FastMoving</Classes>
-    <VisibleClasses datatype="tokens">Cavalry</VisibleClasses>
     <GenericName>Hero Cavalry</GenericName>
+    <VisibleClasses datatype="tokens">Cavalry</VisibleClasses>
+    <Classes datatype="tokens">FastMoving</Classes>
     <Formations datatype="tokens">
       special/formations/wedge
     </Formations>
@@ -25,15 +35,6 @@
   <Position>
     <TurnRate>5</TurnRate>
   </Position>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Hack>10</Hack>
-        <Pierce>8</Pierce>
-        <Crush>25</Crush>
-      </Damage>
-    </Entity>
-  </Resistance>
   <Selectable>
     <Overlay>
       <Shape>
@@ -53,7 +54,10 @@
     <HeightOffset>7.0</HeightOffset>
   </StatusBars>
   <UnitMotion>
-    <WalkSpeed op="mul">2</WalkSpeed>
-    <RunMultiplier>1.4</RunMultiplier>
+    <WalkSpeed op="mul">1.85</WalkSpeed>
+    <RunMultiplier>1.85</RunMultiplier>
   </UnitMotion>
+  <Vision>
+    <Range>100</Range>
+  </Vision>
 </Entity>

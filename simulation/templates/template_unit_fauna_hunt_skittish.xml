@@ -3,7 +3,4 @@
   <UnitAI>
     <DefaultStance>skittish</DefaultStance>
   </UnitAI>
-  <Vision>
-    <Range>0</Range>
-  </Vision>
 </Entity>

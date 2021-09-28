@@ -21,16 +21,19 @@
     <SpawnEntityOnDeath>decay|rubble/rubble_stone_5x5</SpawnEntityOnDeath>
   </Health>
   <Identity>
-    <GenericName>Market</GenericName>
-    <SelectionGroupName>template_structure_economic_market</SelectionGroupName>
-    <Tooltip>Barter resources. Establish trade routes. Train Traders and research trade and barter technologies.</Tooltip>
     <Classes datatype="tokens">Barter</Classes>
-    <VisibleClasses datatype="tokens">Trade Town Market</VisibleClasses>
+    <GenericName>Market</GenericName>
     <Icon>structures/market.png</Icon>
     <RequiredTechnology>phase_town</RequiredTechnology>
+    <Tooltip>Barter resources. Establish trade routes. Train Traders and research trade and barter technologies.</Tooltip>
+    <VisibleClasses datatype="tokens">Trade Town Market</VisibleClasses>
+    <SelectionGroupName>template_structure_economic_market</SelectionGroupName>
   </Identity>
   <Loot>
-    <wood>60</wood>
+    <food>25</food>
+    <wood>25</wood>
+    <stone>25</stone>
+    <metal>25</metal>
   </Loot>
   <Market>
     <TradeType>land</TradeType>
@@ -42,6 +45,8 @@
   <ProductionQueue>
     <BatchTimeModifier>0.7</BatchTimeModifier>
     <Technologies datatype="tokens">
+      unlock_shared_los
+      unlock_shared_dropsites
       trader_health
       trade_gain_01
       trade_gain_02

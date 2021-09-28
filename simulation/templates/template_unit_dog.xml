@@ -1,11 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit">
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>1</Hack>
+        <Pierce>2</Pierce>
+        <Crush>1</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
   <Attack>
     <Melee>
       <AttackName>Fangs</AttackName>
       <Damage>
         <Hack>7</Hack>
         <Pierce>2</Pierce>
+        <Crush>0.0</Crush>
       </Damage>
       <MaxRange>3</MaxRange>
       <PrepareTime>500</PrepareTime>
@@ -18,25 +28,37 @@
     <Population>0</Population>
     <Resources>
       <food>100</food>
+      <wood>0</wood>
+      <stone>0</stone>
+      <metal>0</metal>
     </Resources>
   </Cost>
-  <Footprint replace="">
-    <Square width="1.5" depth="3"/>
-    <Height>1.5</Height>
+  <Footprint>
+    <Circle radius="3.0"/>
+    <Height>3.0</Height>
   </Footprint>
   <Health>
-    <Max>110</Max>
+    <Max>90</Max>
   </Health>
   <Identity>
-    <GenericName>War Dog</GenericName>
-    <Tooltip>Cannot attack Structures, Ships, or Siege Engines.</Tooltip>
     <Classes datatype="tokens">Human FastMoving</Classes>
     <VisibleClasses datatype="tokens">Dog Melee</VisibleClasses>
+    <GenericName>War Dog</GenericName>
+    <Rank>Basic</Rank>
+    <Tooltip>Cannot attack Structures, Ships, or Siege Engines.</Tooltip>
   </Identity>
   <Loot>
     <xp>100</xp>
     <food>10</food>
+    <wood>0</wood>
+    <stone>0</stone>
+    <metal>0</metal>
   </Loot>
+  <Promotion>
+    <Entity>brit_war_dog_e</Entity>
+    <RequiredXp>100</RequiredXp>
+  </Promotion>
+  <ResourceGatherer disable=""/>
   <Selectable>
     <Overlay>
       <Texture>
@@ -47,9 +69,9 @@
   </Selectable>
   <Sound>
     <SoundGroups>
-      <order_attack>voice/global/civ_dog_move.xml</order_attack>
-      <order_walk>voice/global/civ_dog_move.xml</order_walk>
       <select>voice/global/civ_dog_bark.xml</select>
+      <order_walk>voice/global/civ_dog_move.xml</order_walk>
+      <order_attack>voice/global/civ_dog_move.xml</order_attack>
       <walk>actor/mounted/movement/walk.xml</walk>
       <run>actor/mounted/movement/walk.xml</run>
       <attack_melee>attack/weapon/sword.xml</attack_melee>
@@ -58,15 +80,15 @@
     </SoundGroups>
   </Sound>
   <StatusBars>
-    <HeightOffset>2.5</HeightOffset>
+    <HeightOffset>6.5</HeightOffset>
   </StatusBars>
   <TrainingRestrictions>
     <Category>WarDog</Category>
   </TrainingRestrictions>
   <TreasureCollector disable=""/>
   <UnitMotion>
-    <WalkSpeed op="mul">1.5</WalkSpeed>
-    <RunMultiplier>2</RunMultiplier>
+    <WalkSpeed op="mul">1.6</WalkSpeed>
+    <RunMultiplier>1.6</RunMultiplier>
   </UnitMotion>
   <Vision>
     <Range>30</Range>

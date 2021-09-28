@@ -4,18 +4,18 @@
     <Melee>
       <AttackName>Spear</AttackName>
       <Damage>
-        <Hack>4</Hack>
-        <Pierce>3</Pierce>
+        <Hack>6.0</Hack>
+        <Pierce>5.0</Pierce>
       </Damage>
+      <MaxRange>4.5</MaxRange>
       <Bonuses>
         <BonusCavMelee>
           <Classes>Cavalry</Classes>
-          <Multiplier>1.75</Multiplier>
+          <Multiplier>1.5</Multiplier>
         </BonusCavMelee>
       </Bonuses>
-      <MaxRange>4</MaxRange>
       <PrepareTime>625</PrepareTime>
-      <RepeatTime>1250</RepeatTime>
+      <RepeatTime>2000</RepeatTime>
       <PreferredClasses datatype="tokens">Human</PreferredClasses>
     </Melee>
   </Attack>
@@ -25,18 +25,14 @@
     </Resources>
   </Cost>
   <Identity>
-    <GenericName>Cavalry Spearman</GenericName>
-    <Tooltip>Counters: 1.75× vs Cavalry.</Tooltip>
     <VisibleClasses datatype="tokens">Spearman</VisibleClasses>
+    <GenericName>Cavalry Spearman</GenericName>
+    <Tooltip>Counters: 1.5× vs Cavalry.</Tooltip>
   </Identity>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Hack>4</Hack>
-        <Pierce>3</Pierce>
-      </Damage>
-    </Entity>
-  </Resistance>
+  <UnitMotion>
+    <WalkSpeed op="mul">1.1</WalkSpeed>
+    <RunMultiplier>1.1</RunMultiplier>
+  </UnitMotion>
   <Sound>
     <SoundGroups>
       <attack_melee>attack/weapon/spear_attack.xml</attack_melee>

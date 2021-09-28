@@ -1,11 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_champion">
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>10</Hack>
+        <Pierce>10</Pierce>
+        <Crush>25</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
   <Cost>
     <Population>3</Population>
-    <BuildTime>36</BuildTime>
+    <BuildTime>30</BuildTime>
     <Resources>
-      <food>300</food>
-      <metal>200</metal>
+      <food>250</food>
+      <wood>0</wood>
+      <stone>0</stone>
+      <metal>250</metal>
     </Resources>
   </Cost>
   <Footprint replace="">
@@ -13,29 +24,15 @@
     <Height>9.0</Height>
   </Footprint>
   <Health>
-    <Max>1000</Max>
+    <Max>750</Max>
   </Health>
   <Identity>
     <GenericName>War Elephant</GenericName>
     <VisibleClasses datatype="tokens">Elephant</VisibleClasses>
   </Identity>
-  <Loot>
-    <xp>300</xp>
-    <food>30</food>
-    <metal>20</metal>
-  </Loot>
   <Position>
     <TurnRate>4</TurnRate>
   </Position>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Hack>7</Hack>
-        <Pierce>5</Pierce>
-        <Crush>20</Crush>
-      </Damage>
-    </Entity>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <select>actor/fauna/animal/elephant_select.xml</select>
@@ -55,8 +52,13 @@
   </StatusBars>
   <UnitMotion>
     <PassabilityClass>large</PassabilityClass>
+    <WalkSpeed op="mul">0.95</WalkSpeed>
+    <RunMultiplier>0.95</RunMultiplier>
   </UnitMotion>
   <Vision>
     <Range>100</Range>
   </Vision>
+  <VisualActor>
+    <Actor>units/mauryans/champion_elephant.xml</Actor>
+  </VisualActor>
 </Entity>

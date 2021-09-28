@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_fauna_wild_aggressive">
+  <Attack>
+    <Melee>
+      <Damage>
+        <Hack>7</Hack>
+        <Pierce>2</Pierce>
+      </Damage>
+      <PrepareTime>500</PrepareTime>
+      <RepeatTime>1000</RepeatTime>
+    </Melee>
+  </Attack>
   <Sound>
     <SoundGroups>
       <select>voice/global/civ_dog_bark.xml</select>
@@ -14,5 +24,6 @@
   </Sound>
   <UnitMotion>
     <WalkSpeed op="mul">1.6</WalkSpeed>
+    <RunMultiplier>1.6</RunMultiplier>
   </UnitMotion>
 </Entity>

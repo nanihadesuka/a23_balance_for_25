@@ -4,7 +4,9 @@
     <Melee>
       <AttackName>Dagger</AttackName>
       <Damage>
-        <Hack>2</Hack>
+        <Hack>2.0</Hack>
+        <Pierce>0</Pierce>
+        <Crush>0.0</Crush>
       </Damage>
       <MaxRange>3</MaxRange>
       <PrepareTime>500</PrepareTime>
@@ -13,15 +15,34 @@
     <Slaughter>
       <AttackName>Slaughter</AttackName>
       <Damage>
-        <Hack>1000</Hack>
+        <Hack>25.0</Hack>
+        <Pierce>0.0</Pierce>
+        <Crush>0.0</Crush>
       </Damage>
       <MaxRange>2</MaxRange>
       <RepeatTime>1000</RepeatTime>
       <RestrictedClasses datatype="tokens">!Domestic</RestrictedClasses>
     </Slaughter>
   </Attack>
+    <Auras datatype="tokens">
+    units/female_inspiration
+  </Auras>
+  <Builder replace="">
+    <Rate>1.0</Rate>
+    <Entities datatype="tokens">
+      structures/{civ}/house
+      structures/{civ}/storehouse
+      structures/{civ}/farmstead
+      structures/{civ}/field
+      structures/{civ}/corral
+      structures/{civ}/dock
+      structures/{civ}/temple
+      structures/{civ}/market
+      structures/{civ}/civil_centre
+      structures/{civ}/wonder
+    </Entities>
+  </Builder>
   <Cost>
-    <BuildTime>8</BuildTime>
     <Resources>
       <food>50</food>
     </Resources>
@@ -30,17 +51,13 @@
     <Max>25</Max>
   </Health>
   <Identity>
-    <Phenotype>female</Phenotype>
-    <GenericName>Female Citizen</GenericName>
     <SelectionGroupName>template_unit_support_female_citizen</SelectionGroupName>
+    <GenericName>Female Citizen</GenericName>
+    <Phenotype>female</Phenotype>
     <Classes datatype="tokens">FemaleCitizen</Classes>
     <VisibleClasses datatype="tokens">Citizen Worker</VisibleClasses>
     <Formations disable=""/>
   </Identity>
-  <Loot>
-    <xp>3</xp>
-    <food>5</food>
-  </Loot>
   <ResourceGatherer>
     <MaxDistance>2.0</MaxDistance>
     <BaseSpeed>1.0</BaseSpeed>
@@ -55,12 +72,6 @@
       <metal.ore>0.35</metal.ore>
       <metal.ruins>2</metal.ruins>
     </Rates>
-    <Capacities>
-      <food>10</food>
-      <wood>10</wood>
-      <stone>10</stone>
-      <metal>10</metal>
-    </Capacities>
   </ResourceGatherer>
   <Sound>
     <SoundGroups>

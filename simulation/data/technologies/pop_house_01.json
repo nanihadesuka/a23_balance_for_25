@@ -10,10 +10,7 @@
 		"spart": "Peristylon"
 	},
 	"description": "Home gardens ranged from simple fenced-in areas to large manicured and colonnaded enclosures.",
-	"cost": {
-		"wood": 300,
-		"stone": 100
-	},
+	"cost": {"food": 0, "wood": 300, "stone": 100, "metal": 0},
 	"requirements": { "tech": "phase_town" },
 	"requirementsTooltip": "Unlocked in Town Phase.",
 	"icon": "population.png",

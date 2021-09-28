@@ -2,10 +2,13 @@
 <Entity parent="template_structure_economic">
   <AlertRaiser>
     <List datatype="tokens">FemaleCitizen</List>
-    <RaiseAlertRange>50</RaiseAlertRange>
+    <RaiseAlertRange>60</RaiseAlertRange>
     <EndOfAlertRange>100</EndOfAlertRange>
     <SearchRange>100</SearchRange>
   </AlertRaiser>
+  <Capturable>
+    <CapturePoints>300</CapturePoints>
+  </Capturable>
   <Cost>
     <BuildTime>40</BuildTime>
     <Resources>
@@ -21,21 +24,19 @@
     <SpawnEntityOnDeath>decay|rubble/rubble_stone_3x3</SpawnEntityOnDeath>
   </Health>
   <Identity>
-    <GenericName>Storehouse</GenericName>
-    <SelectionGroupName>template_structure_economic_storehouse</SelectionGroupName>
-    <Tooltip>Research gathering technologies.</Tooltip>
     <Classes datatype="tokens">DropsiteWood DropsiteMetal DropsiteStone</Classes>
-    <VisibleClasses datatype="tokens">Village Storehouse</VisibleClasses>
+    <GenericName>Storehouse</GenericName>
     <Icon>structures/storehouse.png</Icon>
+    <Tooltip>Research gathering technologies.</Tooltip>
+    <VisibleClasses datatype="tokens">Village Storehouse</VisibleClasses>
+    <SelectionGroupName>template_structure_economic_storehouse</SelectionGroupName>
     <RequiredTechnology>phase_village</RequiredTechnology>
   </Identity>
-  <Loot>
-    <wood>20</wood>
-  </Loot>
   <Obstruction>
     <Static width="13.0" depth="13.0"/>
   </Obstruction>
   <ProductionQueue>
+    <BatchTimeModifier>0.7</BatchTimeModifier>
     <Technologies datatype="tokens">
       gather_lumbering_ironaxes
       gather_lumbering_strongeraxes

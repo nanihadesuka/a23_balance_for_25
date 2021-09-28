@@ -1,13 +1,13 @@
 {
 	"type": "global",
 	"affects": ["Citizen Javelineer"],
-	"affectedPlayers": ["MutualAlly"],
+	"affectedPlayers": ["ExclusiveMutualAlly"],
 	"modifications": [
-		{ "value": "Cost/Resources/food", "multiply": 0.9 },
-		{ "value": "Cost/Resources/wood", "multiply": 0.9 },
-		{ "value": "Cost/Resources/stone", "multiply": 0.9 },
-		{ "value": "Cost/Resources/metal", "multiply": 0.9 }
+		{ "value": "Cost/Resources/food", "multiply": 0.8 },
+		{ "value": "Cost/Resources/wood", "multiply": 0.8 },
+		{ "value": "Cost/Resources/metal", "multiply": 0.8 },
+		{ "value": "Cost/Resources/stone", "multiply": 0.8 }
 	],
 	"auraName": "Saripeko",
-	"auraDescription": "Citizen Javelineers −10% resource costs."
+	"auraDescription": "Reduces the cost for citizen skirmishers with 20% for allies of Iberian players"
 }

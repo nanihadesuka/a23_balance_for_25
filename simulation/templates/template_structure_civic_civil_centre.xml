@@ -2,23 +2,41 @@
 <Entity parent="template_structure_civic">
   <AlertRaiser>
     <List datatype="tokens">FemaleCitizen</List>
-    <RaiseAlertRange>120</RaiseAlertRange>
-    <EndOfAlertRange>180</EndOfAlertRange>
+    <RaiseAlertRange>140</RaiseAlertRange>
+    <EndOfAlertRange>190</EndOfAlertRange>
     <SearchRange>100</SearchRange>
   </AlertRaiser>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack op="add">5</Hack>
+        <Pierce op="add">5</Pierce>
+      </Damage>
+    </Entity>
+    <Foundation>
+      <Damage>
+        <Hack>5</Hack>
+        <Pierce>15</Pierce>
+        <Crush>3</Crush>
+      </Damage>
+    </Foundation>
+  </Resistance>
   <Attack>
     <Ranged>
       <AttackName>Bow</AttackName>
       <Damage>
-        <Pierce>10</Pierce>
+        <Hack>0.0</Hack>
+        <Pierce>12.0</Pierce>
+        <Crush>0.0</Crush>
       </Damage>
-      <MaxRange>60</MaxRange>
+      <MaxRange>72.0</MaxRange>
+      <MinRange>0.0</MinRange>
       <PrepareTime>1200</PrepareTime>
       <RepeatTime>2000</RepeatTime>
       <Projectile>
-        <Speed>100</Speed>
+        <Speed>75</Speed>
         <Spread>1.5</Spread>
-        <Gravity>50</Gravity>
+        <Gravity>9.81</Gravity>
         <FriendlyFire>false</FriendlyFire>
         <LaunchPoint y="3"/>
       </Projectile>
@@ -47,9 +65,13 @@
     <CapturePoints>2500</CapturePoints>
     <RegenRate>5.0</RegenRate>
   </Capturable>
+  <Population>
+    <Bonus>20</Bonus>
+  </Population>
   <Cost>
     <BuildTime>500</BuildTime>
     <Resources>
+      <food>0</food>
       <wood>500</wood>
       <stone>500</stone>
       <metal>500</metal>
@@ -73,23 +95,22 @@
   </Health>
   <Identity>
     <GenericName>Civic Center</GenericName>
-    <SelectionGroupName>template_structure_civic_civil_centre</SelectionGroupName>
     <Tooltip>Build in own or neutral territory. Acquire large tracts of territory. Territory root. Train Citizens and research technologies. Garrison Soldiers for additional arrows.</Tooltip>
     <Classes datatype="tokens">CivCentre</Classes>
     <VisibleClasses datatype="tokens">Defensive CivilCentre</VisibleClasses>
+    <SelectionGroupName>template_structure_civic_civil_centre</SelectionGroupName>
     <Icon>structures/civic_centre.png</Icon>
   </Identity>
   <Loot>
-    <wood>100</wood>
-    <stone>100</stone>
-    <metal>100</metal>
+    <xp>200</xp>
+    <food>0</food>
+    <wood>200</wood>
+    <stone>200</stone>
+    <metal>200</metal>
   </Loot>
   <Obstruction>
     <Static width="30.0" depth="30.0"/>
   </Obstruction>
-  <Population>
-    <Bonus>20</Bonus>
-  </Population>
   <ProductionQueue>
     <BatchTimeModifier>0.8</BatchTimeModifier>
     <Entities datatype="tokens">
@@ -107,14 +128,6 @@
       hellenistic_metropolis
     </Technologies>
   </ProductionQueue>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Hack op="add">5</Hack>
-        <Pierce op="add">5</Pierce>
-      </Damage>
-    </Entity>
-  </Resistance>
   <ResourceDropsite>
     <Types>food wood stone metal</Types>
     <Sharable>true</Sharable>

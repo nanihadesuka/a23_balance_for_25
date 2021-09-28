@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_civic_house">
+  <Population>
+    <Bonus>10</Bonus>
+  </Population>
   <Cost>
     <BuildTime>50</BuildTime>
     <Resources>
@@ -17,14 +20,11 @@
     <SpawnEntityOnDeath>decay|rubble/rubble_stone_3x3</SpawnEntityOnDeath>
   </Health>
   <Loot>
-    <wood>30</wood>
+    <wood>20</wood>
   </Loot>
   <Obstruction>
     <Static width="14.0" depth="14.0"/>
   </Obstruction>
-  <Population>
-    <Bonus>10</Bonus>
-  </Population>
   <TerritoryInfluence>
     <Radius>20</Radius>
     <Weight>40000</Weight>

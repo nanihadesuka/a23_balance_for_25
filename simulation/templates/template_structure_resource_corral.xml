@@ -23,7 +23,7 @@
     <RequiredTechnology>phase_village</RequiredTechnology>
   </Identity>
   <Loot>
-    <wood>20</wood>
+    <food>25</food>
   </Loot>
   <Obstruction>
     <Static width="16.0" depth="15.0"/>
@@ -38,6 +38,8 @@
     </Entities>
     <Technologies datatype="tokens">
       gather_animals_stockbreeding
+      speed_cavalry_01
+      speed_cavalry_02
     </Technologies>
   </ProductionQueue>
   <Resistance>

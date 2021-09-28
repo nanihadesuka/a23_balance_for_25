@@ -3,6 +3,7 @@
   <Identity>
     <GenericName>Samnite Swordsman</GenericName>
     <SpecificName>Samnite Swordsman</SpecificName>
+    <VisibleClasses datatype="tokens">Mercenary</VisibleClasses>
     <Icon>units/samnite_swordsman.png</Icon>
   </Identity>
   <VisualActor>

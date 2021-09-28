@@ -3,6 +3,9 @@
   <Auras datatype="tokens">
     structures/temple_heal
   </Auras>
+  <Population>
+    <Bonus>5</Bonus>
+  </Population>
   <Cost>
     <BuildTime>200</BuildTime>
     <Resources>
@@ -34,7 +37,8 @@
     <RequiredTechnology>phase_town</RequiredTechnology>
   </Identity>
   <Loot>
-    <stone>60</stone>
+    <stone>50</stone>
+    <metal>50</metal>
   </Loot>
   <Obstruction>
     <Static width="17.5" depth="30.0"/>

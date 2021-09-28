@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_fauna">
   <Health>
+    <Max>200</Max>
+    <DeathType>remain</DeathType>
     <Unhealable>true</Unhealable>
   </Health>
   <Identity>
@@ -48,9 +50,6 @@
     <FeedTimeMin>1</FeedTimeMin>
     <FeedTimeMax>2</FeedTimeMax>
   </UnitAI>
-  <Vision>
-    <Range>0</Range>
-  </Vision>
   <UnitMotion>
     <PassabilityClass>ship-small</PassabilityClass>
     <WalkSpeed op="mul">1.8</WalkSpeed>

@@ -3,7 +3,7 @@
   <Attack>
     <Capture>
       <AttackName>Capture</AttackName>
-      <Capture>2.5</Capture>
+      <Capture>2</Capture>
       <MaxRange>4</MaxRange>
       <RepeatTime>1000</RepeatTime>
       <RestrictedClasses datatype="tokens">Field Palisade Wall</RestrictedClasses>
@@ -11,7 +11,9 @@
     <Slaughter>
       <AttackName>Slaughter</AttackName>
       <Damage>
-        <Hack>1000</Hack>
+        <Hack>100.0</Hack>
+        <Pierce>0.0</Pierce>
+        <Crush>0.0</Crush>
       </Damage>
       <MaxRange>2</MaxRange>
       <RepeatTime>1000</RepeatTime>
@@ -25,8 +27,8 @@
     </Resources>
   </Cost>
   <Footprint replace="">
-    <Square width="3.0" depth="6.0"/>
-    <Height>6.0</Height>
+    <Square width="4.0" depth="6.0"/>
+    <Height>7.5</Height>
   </Footprint>
   <Identity>
     <GenericName>Cavalry</GenericName>
@@ -93,11 +95,11 @@
     </SoundGroups>
   </Sound>
   <StatusBars>
-    <HeightOffset>7.0</HeightOffset>
+    <HeightOffset>6.5</HeightOffset>
   </StatusBars>
   <UnitMotion>
-    <WalkSpeed op="mul">2</WalkSpeed>
-    <RunMultiplier>1.4</RunMultiplier>
+    <WalkSpeed op="mul">1.95</WalkSpeed>
+    <RunMultiplier>1.95</RunMultiplier>
   </UnitMotion>
   <Vision>
     <Range>92</Range>

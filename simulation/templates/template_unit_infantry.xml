@@ -1,9 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="builder|template_unit">
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>2</Hack>
+        <Pierce>4</Pierce>
+        <Crush>15</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
   <Attack>
     <Capture>
       <AttackName>Capture</AttackName>
-      <Capture>2.5</Capture>
+      <Capture>2</Capture>
       <MaxRange>4</MaxRange>
       <RepeatTime>1000</RepeatTime>
       <RestrictedClasses datatype="tokens">Field Palisade Wall</RestrictedClasses>
@@ -11,13 +20,38 @@
     <Slaughter>
       <AttackName>Slaughter</AttackName>
       <Damage>
-        <Hack>1000</Hack>
+        <Hack>50.0</Hack>
+        <Pierce>0.0</Pierce>
+        <Crush>0.0</Crush>
       </Damage>
       <MaxRange>2</MaxRange>
       <RepeatTime>1000</RepeatTime>
       <RestrictedClasses datatype="tokens">!Domestic</RestrictedClasses>
     </Slaughter>
   </Attack>
+  <Builder>
+    <Rate>1.0</Rate>
+    <Entities datatype="tokens">
+      structures/{civ}/house
+      structures/{civ}/storehouse
+      structures/{civ}/farmstead
+      structures/{civ}/field
+      structures/{civ}/corral
+      structures/{civ}/outpost
+      structures/wallset_palisade
+      structures/{civ}/sentry_tower
+      structures/{civ}/dock
+      structures/{civ}/barracks
+      structures/{civ}/forge
+      structures/{civ}/temple
+      structures/{civ}/market
+      structures/{civ}/defense_tower
+      structures/{civ}/wallset_stone
+      structures/{civ}/civil_centre
+      structures/{civ}/fortress
+      structures/{civ}/wonder
+    </Entities>
+  </Builder>
   <Cost>
     <BuildTime>10</BuildTime>
     <Resources>
@@ -27,6 +61,10 @@
       <metal>0</metal>
     </Resources>
   </Cost>
+  <Footprint>
+    <Circle radius="1.5"/>
+    <Height>2.5</Height>
+  </Footprint>
   <Health>
     <Max>80</Max>
   </Health>
@@ -49,15 +87,6 @@
   <Promotion>
     <RequiredXp>100</RequiredXp>
   </Promotion>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Hack>2</Hack>
-        <Pierce>4</Pierce>
-        <Crush>15</Crush>
-      </Damage>
-    </Entity>
-  </Resistance>
   <ResourceGatherer>
     <MaxDistance>2.0</MaxDistance>
     <BaseSpeed>1.0</BaseSpeed>
@@ -72,12 +101,6 @@
       <metal.ore>0.5</metal.ore>
       <metal.ruins>2</metal.ruins>
     </Rates>
-    <Capacities>
-      <food>10</food>
-      <wood>10</wood>
-      <stone>10</stone>
-      <metal>10</metal>
-    </Capacities>
   </ResourceGatherer>
   <Sound>
     <SoundGroups>

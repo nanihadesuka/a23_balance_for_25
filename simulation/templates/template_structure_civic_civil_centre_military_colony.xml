@@ -30,16 +30,11 @@
     <Icon>structures/military_settlement.png</Icon>
     <RequiredTechnology>phase_town</RequiredTechnology>
   </Identity>
-  <Loot>
-    <wood>40</wood>
-    <stone>40</stone>
-    <metal>40</metal>
-  </Loot>
   <ProductionQueue>
     <Technologies datatype="tokens">
       -phase_town_{civ}
       -phase_city_{civ}
-      -hellenistic_metropolis
+      upgrade_rank_advanced_mercenary
     </Technologies>
   </ProductionQueue>
   <Sound>
@@ -48,6 +43,9 @@
       <constructed>interface/complete/building/complete_gymnasium.xml</constructed>
     </SoundGroups>
   </Sound>
+  <TerritoryDecay>
+    <DecayRate>1</DecayRate>
+  </TerritoryDecay>
   <TerritoryInfluence>
     <Radius>80</Radius>
   </TerritoryInfluence>

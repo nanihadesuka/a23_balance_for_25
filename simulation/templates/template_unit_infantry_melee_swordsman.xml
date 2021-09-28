@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_infantry_melee">
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>5</Hack>
+        <Pierce>5</Pierce>
+      </Damage>
+    </Entity>
+  </Resistance>
   <Attack>
     <Melee>
       <AttackName context="Name of an attack using a double-edged sword.">Sword</AttackName>
       <Damage>
         <Hack>5.5</Hack>
+        <Pierce>0</Pierce>
       </Damage>
-      <MaxRange>3</MaxRange>
-      <PrepareTime>375</PrepareTime>
       <RepeatTime>750</RepeatTime>
       <PreferredClasses datatype="tokens">Unit+!Ship</PreferredClasses>
     </Melee>
@@ -23,17 +30,12 @@
     <GenericName>Swordsman</GenericName>
   </Identity>
   <Loot>
-    <wood>4</wood>
-    <metal>1</metal>
+    <metal>5</metal>
   </Loot>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Hack>5</Hack>
-        <Pierce>5</Pierce>
-      </Damage>
-    </Entity>
-  </Resistance>
+  <UnitMotion>
+    <WalkSpeed op="mul">1.05</WalkSpeed>
+    <RunMultiplier>1.05</RunMultiplier>
+  </UnitMotion>
   <Sound>
     <SoundGroups>
       <attack_melee>attack/weapon/sword_attack.xml</attack_melee>

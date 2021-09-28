@@ -8,20 +8,15 @@
 		"sele": "Andrapoda",
 		"spart": "Andrapoda"
 	},
-	"description": "Buy slaves to help your workers quarry stone. Increases stone gathering rates.",
-	"cost": {
-		"food": 600,
-		"stone": 300
-	},
+	"description": "Increases stone gathering rates.",
+	"cost": {"food": 1000, "wood": 0, "stone": 150, "metal": 150},
 	"supersedes": "gather_mining_serfs",
 	"requirements": { "tech": "phase_city" },
 	"requirementsTooltip": "Unlocked in City Phase.",
 	"icon": "mining_stone_03.png",
-	"researchTime": 60,
-	"tooltip": "Workers +25% stone gather rate.",
-	"modifications": [
-		{ "value": "ResourceGatherer/Rates/stone.rock", "multiply": 1.25 }
-	],
+	"researchTime": 40,
+	"tooltip": "Buy slaves to help your workers mine for stone. +50% stone gathering rate.",
+	"modifications": [{"value": "ResourceGatherer/Rates/stone.rock", "multiply": 1.50}],
 	"affects": ["Worker"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

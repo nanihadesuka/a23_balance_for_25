@@ -1,10 +1,10 @@
 {
 	"type": "player",
 	"affects": ["Player"],
-	"affectedPlayers": ["MutualAlly"],
+	"affectedPlayers": ["ExclusiveMutualAlly"],
 	"modifications": [
-		{ "value": "ResourceTrickle/Rates/food", "add": 1 }
+		{ "value": "ResourceTrickle/Rates/food", "add": 1.0 }
 	],
 	"auraName": "Breadbasket of the Mediterranean",
-	"auraDescription": "+1.0 food trickle rate."
+	"auraDescription": "All allies automatically gain a slow trickle of food income."
 }

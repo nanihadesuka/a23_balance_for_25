@@ -5,6 +5,9 @@
     <PlacementType>shore</PlacementType>
     <Category>Dock</Category>
   </BuildRestrictions>
+  <Population>
+    <Bonus>5</Bonus>
+  </Population>
   <Cost>
     <BuildTime>150</BuildTime>
     <Resources>
@@ -22,13 +25,14 @@
   </Health>
   <Identity>
     <GenericName>Dock</GenericName>
-    <SelectionGroupName>template_structure_military_dock</SelectionGroupName>
     <Tooltip>Build upon a shoreline in own, neutral, or allied territory. Establish trade routes. Construct Ships and research Ship technologies.</Tooltip>
+    <SelectionGroupName>template_structure_military_dock</SelectionGroupName>
     <VisibleClasses datatype="tokens">Economic Naval Trade Village Dock</VisibleClasses>
     <Icon>structures/dock.png</Icon>
   </Identity>
   <Loot>
-    <wood>40</wood>
+    <food>30</food>
+    <wood>30</wood>
   </Loot>
   <Market>
     <TradeType>land naval</TradeType>
@@ -48,8 +52,6 @@
       units/{civ}/ship_merchant
       units/{civ}/ship_bireme
       units/{civ}/ship_trireme
-      units/{civ}/ship_quinquereme
-      units/{civ}/ship_fire
     </Entities>
     <Technologies datatype="tokens">
       fishing_boat_gather_rate

@@ -5,10 +5,11 @@
     <Melee>
       <AttackName>Trunk</AttackName>
       <Damage>
-        <Hack>30</Hack>
-        <Crush>120</Crush>
+        <Hack>20</Hack>
+        <Pierce>0</Pierce>
+        <Crush>150.0</Crush>
       </Damage>
-      <MaxRange>5</MaxRange>
+      <MaxRange>8</MaxRange>
       <PrepareTime>750</PrepareTime>
       <RepeatTime>1500</RepeatTime>
       <PreferredClasses datatype="tokens">!Ship</PreferredClasses>

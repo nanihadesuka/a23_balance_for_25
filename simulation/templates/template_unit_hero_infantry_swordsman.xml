@@ -1,12 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_hero_infantry">
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack op="add">4</Hack>
+        <Pierce op="add">4</Pierce>
+      </Damage>
+    </Entity>
+  </Resistance>
   <Attack>
     <Melee>
       <AttackName context="Name of an attack using a double-edged sword.">Sword</AttackName>
       <Damage>
-        <Hack>22</Hack>
+        <Hack>22.0</Hack>
+        <Pierce>0</Pierce>
+        <Crush>0.0</Crush>
       </Damage>
-      <MaxRange>3</MaxRange>
+      <MaxRange>3.5</MaxRange>
       <PrepareTime>375</PrepareTime>
       <RepeatTime>750</RepeatTime>
       <PreferredClasses datatype="tokens">Unit+!Ship</PreferredClasses>
@@ -22,14 +32,13 @@
     <VisibleClasses datatype="tokens">Melee Swordsman</VisibleClasses>
     <GenericName>Hero Swordsman</GenericName>
   </Identity>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Hack op="add">4</Hack>
-        <Pierce op="add">4</Pierce>
-      </Damage>
-    </Entity>
-  </Resistance>
+  <UnitMotion>
+    <WalkSpeed op="mul">1.05</WalkSpeed>
+    <RunMultiplier>1.05</RunMultiplier>
+  </UnitMotion>
+  <Vision>
+    <Range>80</Range>
+  </Vision>
   <Sound>
     <SoundGroups>
       <attack_melee>attack/weapon/sword_attack.xml</attack_melee>

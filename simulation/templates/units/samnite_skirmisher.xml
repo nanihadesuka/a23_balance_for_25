@@ -3,6 +3,7 @@
   <Identity>
     <GenericName>Samnite Skirmisher</GenericName>
     <SpecificName>Samnite Skirmisher</SpecificName>
+    <VisibleClasses datatype="tokens">Mercenary</VisibleClasses>
     <Icon>units/samnite_skirmisher.png</Icon>
   </Identity>
   <VisualActor>

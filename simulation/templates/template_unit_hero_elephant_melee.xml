@@ -1,43 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_hero">
-  <Attack>
-    <Capture disable=""/>
-    <Melee>
-      <AttackName>Trunk</AttackName>
-      <Damage>
-        <Hack>60</Hack>
-        <Crush>240</Crush>
-      </Damage>
-      <MaxRange>5</MaxRange>
-      <PrepareTime>750</PrepareTime>
-      <RepeatTime>1500</RepeatTime>
-     <PreferredClasses datatype="tokens">!Ship</PreferredClasses>
-    </Melee>
-  </Attack>
-  <Cost>
-    <Resources>
-      <food>600</food>
-      <metal>400</metal>
-    </Resources>
-  </Cost>
-  <Footprint replace="">
-    <Square width="4.5" depth="9.0"/>
-    <Height>9.0</Height>
-  </Footprint>
-  <Health>
-    <Max>1500</Max>
-  </Health>
-  <Identity>
-    <GenericName>Hero Elephant</GenericName>
-    <VisibleClasses datatype="tokens">Elephant Melee</VisibleClasses>
-  </Identity>
-  <Loot>
-    <food>60</food>
-    <metal>40</metal>
-  </Loot>
-  <Position>
-    <TurnRate>4</TurnRate>
-  </Position>
   <Resistance>
     <Entity>
       <Damage>
@@ -47,6 +9,43 @@
       </Damage>
     </Entity>
   </Resistance>
+  <Attack>
+    <Capture disable=""/>
+    <Melee>
+      <AttackName>Trunk</AttackName>
+      <Damage>
+        <Hack>20.0</Hack>
+        <Pierce>0</Pierce>
+        <Crush>50.0</Crush>
+      </Damage>
+      <MaxRange>8.0</MaxRange>
+      <PrepareTime>500</PrepareTime>
+      <RepeatTime>1000</RepeatTime>
+     <PreferredClasses datatype="tokens">!Ship</PreferredClasses>
+    </Melee>
+  </Attack>
+  <Cost>
+    <Population>3</Population>
+    <BuildTime>60</BuildTime>
+    <Resources>
+      <food>500</food>
+      <metal>500</metal>
+    </Resources>
+  </Cost>
+  <Footprint replace="">
+    <Square width="4.5" depth="9.0"/>
+    <Height>9.0</Height>
+  </Footprint>
+  <Health>
+    <Max>2000</Max>
+  </Health>
+  <Identity>
+    <GenericName>Hero Elephant</GenericName>
+    <VisibleClasses datatype="tokens">Elephant Melee</VisibleClasses>
+  </Identity>
+  <Position>
+    <TurnRate>4</TurnRate>
+  </Position>
   <Selectable>
     <Overlay>
       <Shape>
@@ -73,5 +72,10 @@
   </StatusBars>
   <UnitMotion>
     <PassabilityClass>large</PassabilityClass>
+    <WalkSpeed op="mul">0.95</WalkSpeed>
+    <RunMultiplier>0.95</RunMultiplier>
   </UnitMotion>
+  <Vision>
+    <Range>80</Range>
+  </Vision>
 </Entity>

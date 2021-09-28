@@ -1,7 +1,7 @@
 {
 	"type": "global",
 	"affects": ["Elephant"],
-	"affectedPlayers": ["MutualAlly"],
+	"affectedPlayers": ["ExclusiveMutualAlly"],
 	"modifications": [
 		{ "value": "Cost/BuildTime", "multiply": 0.8 },
 		{ "value": "Cost/Resources/food", "multiply": 0.8 },

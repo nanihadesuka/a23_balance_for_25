@@ -2,8 +2,8 @@
 	"type": "global",
 	"affects": ["Human", "Siege"],
 	"modifications": [
-		{ "value": "Resistance/Entity/Damage/Hack", "add": 1 },
 		{ "value": "Resistance/Entity/Damage/Pierce", "add": 1 },
+		{ "value": "Resistance/Entity/Damage/Hack", "add": 1 },
 		{ "value": "Resistance/Entity/Damage/Crush", "add": 1 }
 	],
 	"auraName": "Founder and Defender of the Republic",

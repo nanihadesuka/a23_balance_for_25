@@ -8,12 +8,7 @@
 		"spart": "Dynamis"
 	},
 	"description": "The will to fight is crucial to victory. Inspire your troops with higher pay.",
-	"cost": {
-		"food": 1500,
-		"wood": 1500,
-		"stone": 1500,
-		"metal": 1500
-	},
+	"cost": { "food": 1500, "wood": 1500, "stone": 1500, "metal": 1500 },
 	"requirements": { "tech": "phase_city" },
 	"requirementsTooltip": "Unlocked in City Phase.",
 	"icon": "clenched_fist.png",

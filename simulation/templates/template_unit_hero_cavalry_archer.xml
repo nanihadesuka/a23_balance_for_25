@@ -4,18 +4,22 @@
     <Ranged>
       <AttackName>Bow</AttackName>
       <Damage>
-        <Pierce>28</Pierce>
+        <Hack>0</Hack>
+        <Pierce>35</Pierce>
+        <Crush>0</Crush>
       </Damage>
-      <MaxRange>60</MaxRange>
-      <PrepareTime>800</PrepareTime>
-      <RepeatTime>1000</RepeatTime>
+      <MaxRange>80.0</MaxRange>
+      <MinRange>0.0</MinRange>
       <Projectile>
-        <Speed>100</Speed>
+        <Speed>75.0</Speed>
+        <Gravity>9.81</Gravity>
         <Spread>0.5</Spread>
-        <Gravity>50</Gravity>
         <FriendlyFire>false</FriendlyFire>
         <LaunchPoint y="5"/>
       </Projectile>
+      <PrepareTime>1200</PrepareTime>
+      <RepeatTime>2000</RepeatTime>
+      <Delay>0</Delay>
       <PreferredClasses datatype="tokens">Human</PreferredClasses>
     </Ranged>
   </Attack>
@@ -26,21 +30,10 @@
       special/formations/skirmish
     </Formations>
   </Identity>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Hack op="add">-2</Hack>
-        <Pierce op="add">-2</Pierce>
-      </Damage>
-    </Entity>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_impact_ranged>attack/impact/arrow_impact.xml</attack_impact_ranged>
       <attack_ranged>attack/weapon/bow_attack.xml</attack_ranged>
     </SoundGroups>
   </Sound>
-  <UnitMotion>
-    <WalkSpeed op="mul">0.85</WalkSpeed>
-  </UnitMotion>
 </Entity>

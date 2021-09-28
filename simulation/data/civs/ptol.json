@@ -5,22 +5,10 @@
 	"Emblem": "session/portraits/emblems/emblem_ptolemies.png",
 	"History": "The Ptolemaic dynasty was a Macedonian Greek royal family which ruled the Ptolemaic Empire in Egypt during the Hellenistic period. Their rule lasted for 275 years, from 305 BC to 30 BC. They were the last dynasty of ancient Egypt.",
 	"Music": [
-		{
-			"File": "Ammon-Ra.ogg",
-			"Type": "peace"
-		},
-		{
-			"File": "Sands_of_Time.ogg",
-			"Type": "peace"
-		},
-		{
-			"File": "Land_between_the_two_Seas.ogg",
-			"Type": "peace"
-		},
-		{
-			"File": "Valley_of_the_Nile.ogg",
-			"Type": "peace"
-		}
+		{ "File": "Ammon-Ra.ogg", "Type": "peace" },
+		{ "File": "Sands_of_Time.ogg", "Type": "peace" },
+		{ "File": "Land_between_the_two_Seas.ogg", "Type": "peace" },
+		{ "File": "Valley_of_the_Nile.ogg", "Type": "peace" }
 	],
 	"CivBonuses": [
 		{
@@ -46,7 +34,7 @@
 			"Count": 2
 		},
 		{
-			"Template": "units/ptol/infantry_slinger_b",
+			"Template": "units/ptol/infantry_javelineer_b",
 			"Count": 2
 		},
 		{
@@ -90,7 +78,6 @@
 	],
 	"SkirmishReplacements": {
 		"skirmish/units/default_infantry_melee_b": "units/ptol/infantry_pikeman_b",
-		"skirmish/units/default_infantry_ranged_b": "units/ptol/infantry_slinger_b",
 		"skirmish/units/default_cavalry": "units/ptol/cavalry_archer_b",
 		"skirmish/structures/default_house_5": "structures/{civ}/house"
 	},
