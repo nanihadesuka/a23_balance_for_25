@@ -1,7 +1,7 @@
 {
 	"name": "a23_balance_for_25",
 	"version": "1.0.0",
-	"label": "Alpga 23b balance for alpha 25",
+	"label": "Alpha 23b balance for alpha 25",
 	"description": "Play alpha 23b balance in alpha 25",
 	"dependencies": ["0ad=0.0.25"],
 	"url": "",
