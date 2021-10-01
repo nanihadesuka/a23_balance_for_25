@@ -4,7 +4,9 @@
     <Melee>
       <AttackName>Ram</AttackName>
       <Damage>
-        <Crush>150</Crush>
+        <Hack>0.0</Hack>
+        <Pierce>0.0</Pierce>
+        <Crush>150.0</Crush>
       </Damage>
       <MaxRange>6.5</MaxRange>
       <PrepareTime>750</PrepareTime>
@@ -13,11 +15,12 @@
       <RestrictedClasses datatype="tokens">Field Organic</RestrictedClasses>
     </Melee>
   </Attack>
+  <Capturable disable=""/>
   <Cost>
     <BuildTime>30</BuildTime>
     <Resources>
-      <wood>300</wood>
-      <metal>150</metal>
+      <wood>350</wood>
+      <metal>200</metal>
     </Resources>
   </Cost>
   <GarrisonHolder>
@@ -36,18 +39,6 @@
     <Tooltip>Cannot attack Fields or Organic Units.</Tooltip>
     <VisibleClasses datatype="tokens">Melee Ram</VisibleClasses>
   </Identity>
-  <Loot>
-    <xp>200</xp>
-    <wood>60</wood>
-    <metal>30</metal>
-  </Loot>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Pierce>50</Pierce>
-      </Damage>
-    </Entity>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <select>attack/siege/siege_select.xml</select>
@@ -58,7 +49,8 @@
     </SoundGroups>
   </Sound>
   <UnitMotion>
-    <WalkSpeed op="mul">0.8</WalkSpeed>
+    <WalkSpeed op="mul">0.9</WalkSpeed>
+    <RunMultiplier>0.9</RunMultiplier>
   </UnitMotion>
   <Vision>
     <Range>80</Range>

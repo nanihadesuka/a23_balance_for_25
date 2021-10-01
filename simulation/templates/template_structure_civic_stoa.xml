@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_civic">
+  <Population>
+    <Bonus>10</Bonus>
+  </Population>
   <Cost>
     <BuildTime>150</BuildTime>
     <Resources>
+      <food>0</food>
+      <wood>0</wood>
       <stone>100</stone>
       <metal>150</metal>
     </Resources>
@@ -16,7 +21,7 @@
     <EjectHealth>0.1</EjectHealth>
     <EjectClassesOnDestroy datatype="tokens">Unit</EjectClassesOnDestroy>
     <List datatype="tokens">Support Infantry Cavalry</List>
-    <BuffHeal>0</BuffHeal>
+    <BuffHeal>1</BuffHeal>
     <LoadingRange>2</LoadingRange>
   </GarrisonHolder>
   <Health>
@@ -27,17 +32,26 @@
     <GenericName>Stoa</GenericName>
     <SelectionGroupName>template_structure_civic_stoa</SelectionGroupName>
     <Classes datatype="tokens">-ConquestCritical</Classes>
-    <VisibleClasses datatype="tokens">Town Stoa</VisibleClasses>
+    <Tooltip>Recruit special units.</Tooltip>
     <Icon>gaia/special_stoa.png</Icon>
     <RequiredTechnology>phase_town</RequiredTechnology>
+    <VisibleClasses datatype="tokens">Town Stoa</VisibleClasses>
   </Identity>
   <Loot>
-    <stone>20</stone>
-    <metal>30</metal>
+    <stone>10</stone>
+    <metal>15</metal>
   </Loot>
   <Obstruction>
     <Static width="28.0" depth="20.0"/>
   </Obstruction>
+  <ProductionQueue>
+    <BatchTimeModifier>0.7</BatchTimeModifier>
+    <Entities datatype="tokens">
+      units/{civ}/black_cloak
+      units/{civ}/thureophoros
+      units/{civ}/thorakites
+    </Entities>
+  </ProductionQueue>
   <TerritoryInfluence>
     <Root>false</Root>
     <Radius>40</Radius>

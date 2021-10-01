@@ -17,6 +17,14 @@
       units/{civ}/hero_philip_ii
       units/{civ}/hero_alexander_iii
       units/{civ}/hero_demetrius_i
+      units/{civ}/champion_infantry_spearman
+      units/{civ}/champion_cavalry
+      -units/{civ}/siege_ballista_packed
+      -units/{civ}/siege_scorpio_packed
+      -units/{civ}/siege_oxybeles_packed
+      -units/{civ}/siege_lithobolos_packed
+      -units/{civ}/siege_ram
+      -units/{civ}/siege_tower
     </Entities>
     <Technologies datatype="tokens">
       silvershields

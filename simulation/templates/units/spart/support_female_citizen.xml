@@ -10,15 +10,13 @@
   <Builder>
     <Entities datatype="tokens">
       structures/spart/syssiton
-      -structures/{civ}/wallset_stone
+      structures/spart/theater
+      structures/spart/royal_stoa
     </Entities>
   </Builder>
   <Health>
     <Max op="mul">1.4</Max>
   </Health>
-  <Loot>
-    <xp op="add">1</xp>
-  </Loot>
   <Identity>
     <Civ>spart</Civ>
     <Lang>greek</Lang>

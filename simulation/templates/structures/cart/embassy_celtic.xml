@@ -3,6 +3,8 @@
   <Cost>
     <Resources>
       <wood>200</wood>
+      <stone>0</stone>
+      <metal>0</metal>
     </Resources>
   </Cost>
   <Footprint>
@@ -30,6 +32,9 @@
       units/{native}/infantry_swordsman_gaul_b
       units/{native}/cavalry_swordsman_gaul_b
     </Entities>
+    <Technologies datatype="tokens">
+      upgrade_rank_advanced_mercenary
+    </Technologies>
   </ProductionQueue>
   <VisualActor>
     <Actor>structures/carthaginians/embassy_celtic.xml</Actor>

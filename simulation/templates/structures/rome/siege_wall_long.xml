@@ -1,10 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_defensive_wall_long">
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>15.0</Hack>
+        <Pierce>35.0</Pierce>
+        <Crush>5.0</Crush>
+      </Damage>
+    </Entity>
+    <Foundation>
+      <Damage>
+        <Hack>4.0</Hack>
+        <Pierce>7.0</Pierce>
+        <Crush>3.0</Crush>
+      </Damage>
+    </Foundation>
+  </Resistance>
   <BuildRestrictions>
     <Territory>own neutral enemy</Territory>
   </BuildRestrictions>
   <Cost>
-    <BuildTime>30</BuildTime>
     <Resources>
       <wood>60</wood>
       <stone>0</stone>
@@ -26,19 +41,12 @@
     <Icon>structures/siege_wall.png</Icon>
   </Identity>
   <Loot>
-    <wood>12</wood>
+    <wood>15</wood>
     <stone>0</stone>
   </Loot>
   <Obstruction>
     <Static width="36.0" depth="4.0"/>
   </Obstruction>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Hack>15</Hack>
-      </Damage>
-    </Entity>
-  </Resistance>
   <StatusBars>
     <HeightOffset>7.7</HeightOffset>
   </StatusBars>
@@ -85,6 +93,10 @@
   <Upgrade>
     <Gate>
       <Entity>structures/rome/siege_wall_gate</Entity>
+      <Cost>
+        <wood>80</wood>
+        <stone>0</stone>
+      </Cost>
     </Gate>
   </Upgrade>
   <VisualActor>

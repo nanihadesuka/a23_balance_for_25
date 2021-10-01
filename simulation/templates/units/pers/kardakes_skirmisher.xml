@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Entity parent="merc_inf|template_unit_champion_infantry_javelineer">
+<Entity parent="template_unit_champion_infantry_javelineer">
+  <Cost>
+    <Resources>
+      <food>0</food>
+      <metal op="mul">2</metal>
+    </Resources>
+  </Cost>
   <Identity>
     <Civ>pers</Civ>
-    <Lang>persian</Lang>
     <GenericName>Cardaces Skirmisher</GenericName>
     <SpecificName>Peltastes Kardakes</SpecificName>
     <Icon>units/pers_kardakes_skirmisher.png</Icon>
+    <VisibleClasses datatype="tokens">Mercenary</VisibleClasses>
   </Identity>
   <VisualActor>
     <Actor>units/persians/infantry_javelinist_c.xml</Actor>

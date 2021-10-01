@@ -6,6 +6,9 @@
   <Cost>
     <BuildTime>200</BuildTime>
     <Resources>
+      
+      <food>0</food>
+      <wood>0</wood>
       <stone>100</stone>
       <metal>200</metal>
     </Resources>
@@ -27,8 +30,9 @@
     <Icon>structures/tholos.png</Icon>
   </Identity>
   <Loot>
-    <stone>20</stone>
-    <metal>40</metal>
+    <wood>0</wood>
+    <stone>25</stone>
+    <metal>50</metal>
   </Loot>
   <Obstruction>
     <Static width="20.0" depth="20.0"/>
@@ -45,14 +49,6 @@
       <constructed>interface/complete/building/complete_tholos.xml</constructed>
     </SoundGroups>
   </Sound>
-  <TerritoryInfluence>
-    <Root>false</Root>
-    <Radius>38</Radius>
-    <Weight>40000</Weight>
-  </TerritoryInfluence>
-  <Vision>
-    <Range>40</Range>
-  </Vision>
   <VisualActor>
     <Actor>structures/spartans/gerousia.xml</Actor>
   </VisualActor>

@@ -16,6 +16,7 @@
   <Identity>
     <Civ>maur</Civ>
     <SpecificName>Yudhpot</SpecificName>
+    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
     <Icon>units/maur_ship_trireme.png</Icon>
   </Identity>
   <Loot>
@@ -23,6 +24,7 @@
   </Loot>
   <UnitMotion>
     <WalkSpeed op="mul">0.9</WalkSpeed>
+    <RunMultiplier>0.9</RunMultiplier>
   </UnitMotion>
   <VisualActor>
     <Actor>structures/mauryas/trireme.xml</Actor>

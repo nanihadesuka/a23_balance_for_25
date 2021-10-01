@@ -9,8 +9,10 @@
   <Cost>
     <BuildTime>200</BuildTime>
     <Resources>
+      <food>300</food>
+      <wood>0</wood>
       <stone>300</stone>
-      <metal>100</metal>
+      <metal>0</metal>
     </Resources>
   </Cost>
   <Footprint>
@@ -32,7 +34,7 @@
   </Identity>
   <Loot>
     <stone>60</stone>
-    <metal>20</metal>
+    <metal>0</metal>
   </Loot>
   <Obstruction>
     <Static width="16.0" depth="16.0"/>
@@ -44,11 +46,6 @@
       <constructed>interface/complete/building/complete_iber_monument.xml</constructed>
     </SoundGroups>
   </Sound>
-  <TerritoryInfluence>
-    <Root>false</Root>
-    <Radius>30</Radius>
-    <Weight>30000</Weight>
-  </TerritoryInfluence>
   <Vision>
     <Range>30</Range>
   </Vision>

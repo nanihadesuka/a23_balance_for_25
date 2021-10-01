@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Entity parent="template_structure_civic_temple">
+<Entity parent="structures/rome/temple">
   <Footprint>
     <Square width="24.0" depth="44.0"/>
     <Height>12.0</Height>
   </Footprint>
   <GarrisonHolder>
-    <Max op="add">10</Max>
+    <Max>30</Max>
   </GarrisonHolder>
   <Identity>
     <Civ>rome</Civ>
@@ -18,7 +18,8 @@
     <Static width="20.0" depth="40.0"/>
   </Obstruction>
   <TerritoryInfluence>
-    <Radius op="add">12</Radius>
+    <Root>false</Root>
+    <Radius>52</Radius>
   </TerritoryInfluence>
   <VisualActor>
     <Actor>structures/romans/temple_mars.xml</Actor>

@@ -35,6 +35,9 @@
     <Entities datatype="tokens">
       units/{native}/cavalry_javelineer_merc_b
     </Entities>
+    <Technologies datatype="tokens">
+      upgrade_rank_advanced_mercenary
+    </Technologies>
   </ProductionQueue>
   <TerritoryDecay>
     <DecayRate>1</DecayRate>

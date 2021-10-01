@@ -7,7 +7,7 @@
   </Attack>
   <Builder>
     <Entities datatype="tokens">
-      structures/maur/palace
+      structures/maur/elephant_stable
       structures/maur/pillar_ashoka
     </Entities>
   </Builder>

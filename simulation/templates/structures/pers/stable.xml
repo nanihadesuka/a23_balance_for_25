@@ -11,6 +11,12 @@
   <Obstruction>
     <Static width="18.0" depth="16.0"/>
   </Obstruction>
+  <ProductionQueue>
+    <Technologies datatype="tokens">
+      garrison_heal
+      -civbonuses/persians/training_conscription_cavalry
+    </Technologies>
+  </ProductionQueue>
   <VisualActor>
     <Actor>structures/persians/stable.xml</Actor>
     <FoundationActor>structures/fndn_6x5.xml</FoundationActor>

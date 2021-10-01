@@ -4,9 +4,11 @@
     <Melee>
       <AttackName>Fire</AttackName>
       <Damage>
-        <Fire>20</Fire>
+        <Hack>10.0</Hack>
+        <Pierce>10.0</Pierce>
+        <Crush>10.0</Crush>
       </Damage>
-      <MaxRange>12</MaxRange>
+      <MaxRange>8.0</MaxRange>
       <PrepareTime>50</PrepareTime>
       <RepeatTime>100</RepeatTime>
       <RestrictedClasses datatype="tokens">!Ship</RestrictedClasses>
@@ -26,7 +28,6 @@
       <Fire>600</Fire>
     </Damage>
   </DeathDamage>
-  <GarrisonHolder disable=""/>
   <Health>
     <Max>500</Max>
     <RegenRate>-6</RegenRate>
@@ -38,15 +39,17 @@
   </Health>
   <Identity>
     <GenericName>Fire Ship</GenericName>
-    <Tooltip>Unrepairable. Gradually loses health. Can only attack Ships.</Tooltip>
     <VisibleClasses datatype="tokens">Melee Warship Fireship</VisibleClasses>
+    <Tooltip>Unrepairable. Gradually loses health. Can only attack Ships.</Tooltip>
     <RequiredTechnology>phase_town</RequiredTechnology>
   </Identity>
   <Loot disable=""/>
   <Repairable disable=""/>
+  <ResourceGatherer disable=""/>
   <UnitMotion>
     <PassabilityClass>ship-small</PassabilityClass>
     <WalkSpeed op="mul">1.6</WalkSpeed>
+    <RunMultiplier>1.6</RunMultiplier>
   </UnitMotion>
   <Vision>
     <Range>60</Range>

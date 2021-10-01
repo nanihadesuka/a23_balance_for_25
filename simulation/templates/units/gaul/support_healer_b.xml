@@ -5,6 +5,7 @@
     <GenericName>Druid</GenericName>
     <SpecificName>Druid</SpecificName>
     <Icon>units/celt_support_healer.png</Icon>
+    <Rank>Basic</Rank>
   </Identity>
   <Promotion>
     <Entity>units/gaul/support_healer_a</Entity>

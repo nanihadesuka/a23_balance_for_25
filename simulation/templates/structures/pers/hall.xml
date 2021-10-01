@@ -32,6 +32,14 @@
   <Obstruction>
     <Static width="25.0" depth="25.0"/>
   </Obstruction>
+  <ProductionQueue>
+    <BatchTimeModifier>0.7</BatchTimeModifier>
+    <Entities datatype="tokens">
+      units/{civ}/kardakes_hoplite
+      units/{civ}/kardakes_skirmisher
+      units/{civ}/champion_elephant
+    </Entities>
+  </ProductionQueue>
   <Sound>
     <SoundGroups>
       <select>interface/select/building/sel_broch.xml</select>
@@ -42,11 +50,7 @@
   <TerritoryInfluence>
     <Root>false</Root>
     <Radius>38</Radius>
-    <Weight>40000</Weight>
   </TerritoryInfluence>
-  <Vision>
-    <Range>40</Range>
-  </Vision>
   <VisualActor>
     <Actor>structures/persians/hall.xml</Actor>
     <FoundationActor>structures/fndn_7x7.xml</FoundationActor>

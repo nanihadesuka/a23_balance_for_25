@@ -1,12 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_ship">
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>2</Hack>
+        <Pierce>5</Pierce>
+        <Crush>2</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
   <Attack>
     <Melee>
       <AttackName>Harpoon</AttackName>
       <Damage>
-        <Hack>10</Hack>
+        <Hack>10.0</Hack>
+        <Pierce>0.0</Pierce>
+        <Crush>0.0</Crush>
       </Damage>
-      <MaxRange>5</MaxRange>
+      <MaxRange>5.0</MaxRange>
       <PrepareTime>500</PrepareTime>
       <RepeatTime>1000</RepeatTime>
       <RestrictedClasses datatype="tokens">!SeaCreature</RestrictedClasses>
@@ -20,19 +31,22 @@
   </Cost>
   <GarrisonHolder>
     <Max>1</Max>
+    <EjectHealth>0</EjectHealth>
+    <BuffHeal>0</BuffHeal>
+    <LoadingRange>10</LoadingRange>
+    <Pickup>true</Pickup>
   </GarrisonHolder>
-  <Health>
-    <Max>120</Max>
-  </Health>
   <Identity>
+    <Classes datatype="tokens">-ConquestCritical</Classes>
     <GenericName>Fishing Boat</GenericName>
     <SelectionGroupName>template_unit_ship_fishing</SelectionGroupName>
-    <Tooltip>Fish the waters for food.</Tooltip>
-    <Classes datatype="tokens">-ConquestCritical</Classes>
     <VisibleClasses datatype="tokens">FishingBoat</VisibleClasses>
+    <Tooltip>Fish the waters for food.</Tooltip>
   </Identity>
   <Loot>
+    <xp>1</xp>
     <wood>10</wood>
+    <metal>0</metal>
   </Loot>
   <ResourceGatherer>
     <MaxDistance>6.0</MaxDistance>
@@ -40,9 +54,6 @@
     <Rates>
       <food.fish>1.8</food.fish>
     </Rates>
-    <Capacities>
-      <food>40</food>
-    </Capacities>
   </ResourceGatherer>
   <Selectable>
     <Overlay>
@@ -71,6 +82,7 @@
   <UnitMotion>
     <PassabilityClass>ship-small</PassabilityClass>
     <WalkSpeed op="mul">1.1</WalkSpeed>
+    <RunMultiplier>1.1</RunMultiplier>
   </UnitMotion>
   <Vision>
     <Range>30</Range>

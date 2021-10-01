@@ -11,6 +11,21 @@
   <Obstruction>
     <Static width="24.0" depth="26.0"/>
   </Obstruction>
+  <ProductionQueue>
+    <Entities datatype="tokens">
+      units/{civ}/champion_infantry_pikeman
+      units/{civ}/champion_cavalry
+      units/{civ}/champion_elephant
+      -units/{civ}/siege_ram
+    </Entities>
+    <Technologies datatype="tokens">
+      siege_attack
+      siege_armor
+      siege_cost_metal
+      siege_cost_wood
+      siege_bolt_accuracy
+    </Technologies>
+  </ProductionQueue>
   <VisualActor>
     <Actor>structures/ptolemies/fortress.xml</Actor>
   </VisualActor>

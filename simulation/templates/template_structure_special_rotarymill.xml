@@ -3,11 +3,16 @@
   <Auras datatype="tokens">
     structures/rotary_mill
   </Auras>
+  <Population>
+    <Bonus>2</Bonus>
+  </Population>
   <Cost>
     <BuildTime>100</BuildTime>
     <Resources>
+      <food>0</food>
       <wood>200</wood>
       <stone>100</stone>
+      <metal>0</metal>
     </Resources>
   </Cost>
   <Footprint replace="">
@@ -20,6 +25,7 @@
     <SelectionGroupName>template_structure_special_rotarymill</SelectionGroupName>
     <VisibleClasses datatype="tokens">RotaryMill</VisibleClasses>
     <Icon>structures/rotarymill.png</Icon>
+    <SpecificName>Melonas</SpecificName>
   </Identity>
   <Loot>
     <food>50</food>
@@ -53,6 +59,7 @@
     <Range>40</Range>
   </Vision>
   <VisualActor>
+    <Actor>structures/celts/special.xml</Actor>
     <FoundationActor>structures/fndn_6x6.xml</FoundationActor>
   </VisualActor>
 </Entity>

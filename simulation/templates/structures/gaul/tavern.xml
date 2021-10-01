@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_civic_house">
+  <Population>
+    <Bonus>10</Bonus>
+  </Population>
   <Cost>
     <BuildTime>200</BuildTime>
     <Resources>
+      <food>0</food>
       <wood>100</wood>
       <stone>100</stone>
+      <metal>0</metal>
     </Resources>
   </Cost>
   <Footprint>
@@ -19,20 +24,20 @@
     <Civ>gaul</Civ>
     <GenericName>Tavern</GenericName>
     <SpecificName>Taberna</SpecificName>
-    <VisibleClasses datatype="tokens">-Village Town</VisibleClasses>
+    <Tooltip>Recruit Naked Fanatics.</Tooltip>
     <Icon>structures/embassy_celtic.png</Icon>
     <RequiredTechnology>phase_town</RequiredTechnology>
+    <VisibleClasses datatype="tokens">-Village Town</VisibleClasses>
   </Identity>
-  <Loot>
-    <wood>20</wood>
-    <stone>20</stone>
-  </Loot>
   <Obstruction>
     <Static width="20.0" depth="20.0"/>
   </Obstruction>
-  <Population>
-    <Bonus>10</Bonus>
-  </Population>
+  <ProductionQueue>
+    <BatchTimeModifier>0.7</BatchTimeModifier>
+    <Entities datatype="tokens">
+      units/{civ}/champion_fanatic
+    </Entities>
+  </ProductionQueue>
   <Sound>
     <SoundGroups>
       <select>interface/select/building/sel_broch.xml</select>
@@ -40,7 +45,8 @@
     </SoundGroups>
   </Sound>
   <TerritoryInfluence>
-    <Radius>30</Radius>
+    <Radius>32</Radius>
+    <Weight>65535</Weight>
   </TerritoryInfluence>
   <VisualActor>
     <Actor>structures/celts/tavern.xml</Actor>

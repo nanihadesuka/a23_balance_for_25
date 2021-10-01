@@ -4,20 +4,22 @@
     <Ranged>
       <AttackName context="Name of an attack of a World War II fighter plane.">Machine Guns</AttackName>
       <Damage>
-        <Pierce>100</Pierce>
-        <Crush>227</Crush>
+        <Hack>0.0</Hack>
+        <Pierce>100.0</Pierce>
+        <Crush>227.0</Crush>
       </Damage>
       <MaxRange>120</MaxRange>
       <MinRange>80</MinRange>
-      <PrepareTime>0</PrepareTime>
-      <RepeatTime>10000</RepeatTime>
       <Projectile>
-        <Speed>75</Speed>
-        <Spread>1</Spread>
+        <Speed>75.0</Speed>
+        <Spread>1.0</Spread>
         <Gravity>9.81</Gravity>
         <FriendlyFire>false</FriendlyFire>
         <LaunchPoint y="3"/>
       </Projectile>
+      <PrepareTime>0</PrepareTime>
+      <RepeatTime>10000</RepeatTime>
+      <Delay>0</Delay>
     </Ranged>
   </Attack>
   <BuildingAI>
@@ -51,10 +53,10 @@
   </Identity>
   <Obstruction disable=""/>
   <Position>
-    <Anchor>upright</Anchor>
-    <Floating>true</Floating>
-    <FloatDepth>0</FloatDepth>
     <TurnRate>1</TurnRate>
+    <Floating>true</Floating>
+    <FloatDepth>0.0</FloatDepth>
+    <Anchor>upright</Anchor>
   </Position>
   <Repairable>
     <RepairTimeRatio>3.0</RepairTimeRatio>

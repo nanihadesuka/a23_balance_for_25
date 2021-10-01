@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_special">
-  <Capturable disable=""/>
   <Cost>
     <BuildTime>200</BuildTime>
     <Resources>
+      <wood>0</wood>
       <stone>200</stone>
       <metal>400</metal>
     </Resources>
@@ -24,10 +24,6 @@
     <VisibleClasses datatype="tokens">TriumphalArch</VisibleClasses>
     <Icon>structures/arch.png</Icon>
   </Identity>
-  <Loot>
-    <stone>40</stone>
-    <metal>80</metal>
-  </Loot>
   <Obstruction>
     <Static width="18.0" depth="9.0"/>
   </Obstruction>
@@ -39,7 +35,9 @@
       <constructed>interface/complete/building/complete_theater.xml</constructed>
     </SoundGroups>
   </Sound>
-  <TerritoryDecay disable=""/>
+  <TerritoryInfluence>
+    <Root>true</Root>
+  </TerritoryInfluence>
   <VisualActor>
     <Actor>structures/romans/triumphal_arch.xml</Actor>
     <FoundationActor>structures/fndn_5x3.xml</FoundationActor>

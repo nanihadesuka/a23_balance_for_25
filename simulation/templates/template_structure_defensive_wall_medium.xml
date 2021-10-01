@@ -4,9 +4,9 @@
     structures/wall_garrisoned
   </Auras>
   <Cost>
-    <BuildTime>24</BuildTime>
+    <BuildTime>30</BuildTime>
     <Resources>
-      <stone>24</stone>
+      <stone>22</stone>
     </Resources>
   </Cost>
   <Health>
@@ -16,9 +16,6 @@
   <Identity>
     <Classes datatype="tokens">WallMedium</Classes>
   </Identity>
-  <Loot>
-    <stone>5</stone>
-  </Loot>
   <VisualActor>
     <FoundationActor>structures/fndn_6x3_wall.xml</FoundationActor>
   </VisualActor>

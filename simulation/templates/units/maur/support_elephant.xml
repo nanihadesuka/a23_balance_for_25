@@ -1,10 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_support_elephant">
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>5</Hack>
+        <Pierce>8</Pierce>
+        <Crush>10</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <Builder>
+    <Rate>2.0</Rate>
+    <Entities datatype="tokens"/>
+  </Builder>
+  <Cost>
+    <BuildTime>20</BuildTime>
+    <Resources>
+      <food>150</food>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>300</Max>
+  </Health>
   <Identity>
     <Civ>maur</Civ>
+    <VisibleClasses datatype="tokens">Elephant</VisibleClasses>
+    <GenericName>Worker Elephant</GenericName>
     <SpecificName>Karmākara Gaja</SpecificName>
     <Icon>units/maur_support_elephant.png</Icon>
+    <Tooltip>Mobile dropsite. Can also assist in constructing buildings.</Tooltip>
+    <Formations disable=""/>
   </Identity>
+  <Loot>
+    <xp>50</xp>
+    <food>25</food>
+    <wood>10</wood>
+    <stone>10</stone>
+    <metal>10</metal>
+  </Loot>
+    <ResourceDropsite>
+    <Types>food wood stone metal</Types>
+    <Sharable>false</Sharable>
+  </ResourceDropsite>
+  <UnitAI>
+    <CanPatrol>false</CanPatrol>
+  </UnitAI>
+  <UnitMotion>
+    <PassabilityClass>large</PassabilityClass>
+    <WalkSpeed op="mul">0.6</WalkSpeed>
+    <RunMultiplier>0.6</RunMultiplier>
+  </UnitMotion>
+  <Vision>
+    <Range>50</Range>
+  </Vision>
   <VisualActor>
     <Actor>units/mauryas/support_elephant.xml</Actor>
   </VisualActor>

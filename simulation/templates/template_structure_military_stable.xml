@@ -45,18 +45,12 @@
       units/{civ}/cavalry_spearman_b
       units/{civ}/cavalry_javelineer_b
       units/{civ}/cavalry_archer_b
-      units/{civ}/champion_cavalry
-      units/{civ}/champion_chariot
       units/{civ}/war_dog
     </Entities>
     <Technologies datatype="tokens">
-      stable_batch_training
-      cavalry_cost_time
-      cavalry_movement_speed
-      cavalry_health
-      nisean_horses
-      unlock_champion_cavalry
-      unlock_champion_chariots
+      civbonuses/persians/training_levy_cavalry
+      civbonuses/persians/training_conscription_cavalry
+      civbonuses/successors/special_war_horses
     </Technologies>
   </ProductionQueue>
   <Sound>

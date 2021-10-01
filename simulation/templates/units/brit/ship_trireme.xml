@@ -16,6 +16,7 @@
   <Identity>
     <Civ>brit</Civ>
     <SpecificName>Pontos</SpecificName>
+    <Tooltip>Transport many soldiers across the sea.</Tooltip>
     <Icon>units/celt_ship_trireme.png</Icon>
   </Identity>
   <Loot>
@@ -23,6 +24,7 @@
   </Loot>
   <UnitMotion>
     <WalkSpeed op="mul">0.9</WalkSpeed>
+    <RunMultiplier>0.9</RunMultiplier>
   </UnitMotion>
   <VisualActor>
     <Actor>structures/celts/warship.xml</Actor>

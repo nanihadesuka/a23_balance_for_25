@@ -18,4 +18,15 @@
     <Actor>structures/spartans/stoa.xml</Actor>
     <FoundationActor>structures/fndn_8x7.xml</FoundationActor>
   </VisualActor>
+  <ProductionQueue>
+    <BatchTimeModifier>0.7</BatchTimeModifier>
+    <Entities datatype="tokens">
+      units/merc_black_cloak
+      units/merc_thureophoros
+      units/merc_thorakites
+    </Entities>
+  </ProductionQueue>
+  <BuildRestrictions>
+    <Category>Stoa</Category>
+  </BuildRestrictions>
 </Entity>

@@ -27,8 +27,9 @@
     <Icon>structures/tholos.png</Icon>
   </Identity>
   <Loot>
-    <stone>20</stone>
-    <metal>40</metal>
+    <wood>0</wood>
+    <stone>25</stone>
+    <metal>50</metal>
   </Loot>
   <Obstruction>
     <Static width="24.0" depth="30.0"/>

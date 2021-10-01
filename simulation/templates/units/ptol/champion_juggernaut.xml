@@ -4,8 +4,9 @@
     <Population>5</Population>
     <BuildTime>60</BuildTime>
     <Resources>
-      <wood>800</wood>
-      <metal>400</metal>
+      <wood>400</wood>
+      <metal>300</metal>
+      <stone>350</stone>
     </Resources>
   </Cost>
   <Footprint>
@@ -20,15 +21,15 @@
   </Health>
   <Identity>
     <Civ>ptol</Civ>
-    <Classes datatype="tokens">Juggernaut</Classes>
     <GenericName>Juggernaut</GenericName>
     <SpecificName>Tessarakonterēs</SpecificName>
+    <Classes datatype="tokens">Juggernaut</Classes>
     <Icon>units/rome_ship_quinquereme.png</Icon>
   </Identity>
   <Loot>
-    <xp>400</xp>
-    <wood>160</wood>
-    <metal>80</metal>
+    <xp>200</xp>
+    <wood>50</wood>
+    <metal>50</metal>
   </Loot>
   <TrainingRestrictions>
     <Category>Juggernaut</Category>

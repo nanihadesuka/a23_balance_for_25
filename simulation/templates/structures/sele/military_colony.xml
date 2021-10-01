@@ -8,6 +8,7 @@
     <Civ>sele</Civ>
     <SpecificName>Klērouchia</SpecificName>
     <Classes datatype="tokens">CivSpecific</Classes>
+    <Tooltip>This is the Seleucid expansion building, similar to Civic Centers for other factions. It is weaker and carries a smaller territory influence, but is cheaper and built faster. Train settler-soldiers of various nationalities.</Tooltip>
   </Identity>
   <Obstruction>
     <Static width="29" depth="29"/>
@@ -18,6 +19,9 @@
       units/{civ}/infantry_archer_merc_b
       units/{civ}/cavalry_spearman_merc_b
     </Entities>
+    <Technologies datatype="tokens">
+      upgrade_rank_advanced_mercenary
+    </Technologies>
   </ProductionQueue>
   <VisualActor>
     <Actor>structures/seleucids/military_colony.xml</Actor>

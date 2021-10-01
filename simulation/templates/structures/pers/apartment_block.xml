@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_civic_house">
+  <Population>
+    <Bonus>15</Bonus>
+  </Population>
   <Footprint>
     <Square width="25.0" depth="14.0"/>
     <Height>10.0</Height>
@@ -14,9 +17,6 @@
   <Obstruction>
     <Static width="23.0" depth="12.0"/>
   </Obstruction>
-  <Population>
-    <Bonus>15</Bonus>
-  </Population>
   <TerritoryInfluence>
     <Radius>25</Radius>
   </TerritoryInfluence>

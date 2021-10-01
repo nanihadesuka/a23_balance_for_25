@@ -3,6 +3,7 @@
   <Cost>
     <BuildTime>200</BuildTime>
     <Resources>
+      <wood>0</wood>
       <stone>200</stone>
       <metal>200</metal>
     </Resources>
@@ -28,8 +29,9 @@
     <Icon>structures/syssition.png</Icon>
   </Identity>
   <Loot>
-    <stone>40</stone>
-    <metal>40</metal>
+    <wood>0</wood>
+    <stone>50</stone>
+    <metal>50</metal>
   </Loot>
   <Obstruction>
     <Static width="16.0" depth="26.0"/>
@@ -37,10 +39,10 @@
   <ProductionQueue>
     <BatchTimeModifier>0.7</BatchTimeModifier>
     <Entities datatype="tokens">
-      units/{civ}/champion_infantry_spear
       units/{civ}/hero_leonidas
       units/{civ}/hero_brasidas
       units/{civ}/hero_agis
+      units/{civ}/champion_infantry_spear
     </Entities>
     <Technologies datatype="tokens">
       agoge
@@ -52,14 +54,6 @@
       <constructed>interface/complete/building/complete_gymnasium.xml</constructed>
     </SoundGroups>
   </Sound>
-  <TerritoryInfluence>
-    <Root>false</Root>
-    <Radius>38</Radius>
-    <Weight>40000</Weight>
-  </TerritoryInfluence>
-  <Vision>
-    <Range>40</Range>
-  </Vision>
   <VisualActor>
     <Actor>structures/spartans/syssiton.xml</Actor>
     <FoundationActor>structures/fndn_5x8.xml</FoundationActor>

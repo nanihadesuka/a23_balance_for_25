@@ -20,6 +20,9 @@
       units/{civ}/cavalry_spearman_merc_b
       units/{civ}/cavalry_javelineer_merc_b
     </Entities>
+    <Technologies datatype="tokens">
+      upgrade_rank_advanced_mercenary
+    </Technologies>
   </ProductionQueue>
   <VisualActor>
     <Actor>structures/ptolemies/military_colony.xml</Actor>

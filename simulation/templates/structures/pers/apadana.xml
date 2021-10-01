@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_special">
   <BuildRestrictions>
-    <Category>Palace</Category>
+    <Category>Apadana</Category>
   </BuildRestrictions>
+  <Population>
+    <Bonus>10</Bonus>
+  </Population>
   <Cost>
     <BuildTime>300</BuildTime>
     <Resources>
@@ -31,8 +34,8 @@
     <Icon>structures/palace.png</Icon>
   </Identity>
   <Loot>
-    <stone>60</stone>
-    <metal>40</metal>
+    <stone>75</stone>
+    <metal>50</metal>
   </Loot>
   <Obstruction>
     <Static width="30.0" depth="30.0"/>
@@ -40,10 +43,10 @@
   <ProductionQueue>
     <BatchTimeModifier>0.8</BatchTimeModifier>
     <Entities datatype="tokens">
-      units/{civ}/champion_infantry
       units/{civ}/hero_cyrus_ii
       units/{civ}/hero_darius_i
       units/{civ}/hero_xerxes_i
+      units/{civ}/champion_infantry
     </Entities>
     <Technologies datatype="tokens">
       immortals
@@ -56,7 +59,7 @@
       <stone>0.75</stone>
       <metal>0.75</metal>
     </Rates>
-    <Interval>2000</Interval>
+    <Interval>1000</Interval>
   </ResourceTrickle>
   <Sound>
     <SoundGroups>
@@ -67,11 +70,7 @@
   <TerritoryInfluence>
     <Root>true</Root>
     <Radius>48</Radius>
-    <Weight>40000</Weight>
   </TerritoryInfluence>
-  <Vision>
-    <Range>40</Range>
-  </Vision>
   <VisualActor>
     <Actor>structures/persians/apadana.xml</Actor>
     <FoundationActor>structures/fndn_8x9.xml</FoundationActor>

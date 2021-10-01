@@ -27,8 +27,9 @@
     <Icon>structures/gymnasium.png</Icon>
   </Identity>
   <Loot>
-    <stone>40</stone>
-    <metal>40</metal>
+    <wood>0</wood>
+    <stone>50</stone>
+    <metal>50</metal>
   </Loot>
   <Obstruction>
     <Static width="28.0" depth="28.0"/>

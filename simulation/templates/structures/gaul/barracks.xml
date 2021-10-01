@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_military_barracks">
-  <Cost>
-    <Resources>
-      <wood>300</wood>
-      <stone>0</stone>
-    </Resources>
-  </Cost>
+  <Population>
+    <Bonus>4</Bonus>
+  </Population>
   <Footprint>
     <Square width="22.0" depth="22.0"/>
     <Height>5.0</Height>
@@ -24,6 +21,15 @@
   <Obstruction>
     <Static width="20.0" depth="20.0"/>
   </Obstruction>
+  <ProductionQueue>
+    <Entities datatype="tokens">
+      units/{civ}/champion_infantry_swordsman_barracks
+      units/{civ}/champion_cavalry_barracks
+    </Entities>
+    <Technologies datatype="tokens">
+      unlock_champion_units
+    </Technologies>
+  </ProductionQueue>
   <VisualActor>
     <Actor>structures/celts/barracks.xml</Actor>
     <FoundationActor>structures/fndn_6x6.xml</FoundationActor>

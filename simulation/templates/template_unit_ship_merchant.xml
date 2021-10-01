@@ -1,29 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_ship">
+  <Resistance>
+    <Entity>
+      <Hack>2</Hack>
+      <Pierce>5</Pierce>
+      <Crush>2</Crush>
+    </Entity>
+  </Resistance>
   <Cost>
-    <BuildTime>20</BuildTime>
     <Resources>
+      <wood>0</wood>
       <metal>100</metal>
     </Resources>
   </Cost>
   <GarrisonHolder>
     <Max>15</Max>
+    <EjectHealth>0</EjectHealth>
     <List datatype="tokens">Support Cavalry</List>
+    <BuffHeal>0</BuffHeal>
+    <LoadingRange>10</LoadingRange>
+    <Pickup>true</Pickup>
   </GarrisonHolder>
   <Health>
-    <Max>240</Max>
+    <Max>400</Max>
   </Health>
   <Identity>
-    <GenericName>Merchantman</GenericName>
-    <SelectionGroupName>template_unit_ship_merchant</SelectionGroupName>
-    <Tooltip>Trade between docks. Garrison a Trader aboard for additional profit (+20% for each garrisoned). Gather profitable aquatic treasures.</Tooltip>
     <Classes datatype="tokens">-ConquestCritical</Classes>
-    <VisibleClasses datatype="tokens">Trader Bribable</VisibleClasses>
+    <Formations disable=""/>
+    <GenericName>Merchantman</GenericName>
     <RequiredTechnology>phase_town</RequiredTechnology>
+    <Tooltip>Trade between docks. Garrison a Trader aboard for additional profit (+20% for each garrisoned). Gather profitable aquatic treasures.</Tooltip>
+    <VisibleClasses datatype="tokens">Trader Bribable</VisibleClasses>
+    <SelectionGroupName>template_unit_ship_merchant</SelectionGroupName>
   </Identity>
   <Loot>
-    <metal>20</metal>
+    <xp>25</xp>
+    <wood>15</wood>
+    <metal>0</metal>
   </Loot>
+  <ResourceGatherer>
+    <MaxDistance>12.0</MaxDistance>
+    <Capacities>
+      <food>75</food>
+      <wood>75</wood>
+      <stone>50</stone>
+      <metal>50</metal>
+    </Capacities>
+  </ResourceGatherer>
   <Trader>
     <GainMultiplier>0.75</GainMultiplier>
     <GarrisonGainMultiplier>0.2</GarrisonGainMultiplier>
@@ -39,6 +62,7 @@
   <UnitMotion>
     <PassabilityClass>ship-small</PassabilityClass>
     <WalkSpeed op="mul">1.35</WalkSpeed>
+    <RunMultiplier>1.35</RunMultiplier>
   </UnitMotion>
   <Vision>
     <Range>50</Range>

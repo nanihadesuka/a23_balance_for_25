@@ -1,19 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_special">
-  <Cost>
-    <BuildTime>200</BuildTime>
-    <Resources>
-      <stone>200</stone>
-      <metal>200</metal>
-    </Resources>
-  </Cost>
+  <Population>
+    <Bonus>10</Bonus>
+  </Population>
   <Footprint>
     <Square width="40.0" depth="16.0"/>
     <Height>5.0</Height>
   </Footprint>
-  <Health>
-    <Max>2000</Max>
-  </Health>
   <Identity>
     <Civ>maur</Civ>
     <GenericName>Palace</GenericName>
@@ -24,8 +17,9 @@
     <Icon>gaia/special_stoa.png</Icon>
   </Identity>
   <Loot>
-    <stone>40</stone>
-    <metal>40</metal>
+    <wood>0</wood>
+    <stone>50</stone>
+    <metal>50</metal>
   </Loot>
   <Obstruction>
     <Static width="36.0" depth="12.0"/>
@@ -47,13 +41,10 @@
     </SoundGroups>
   </Sound>
   <TerritoryInfluence>
-    <Root>true</Root>
-    <Radius>48</Radius>
-    <Weight>40000</Weight>
+    <Root>false</Root>
+    <Radius>38</Radius>
+    <Weight>65535</Weight>
   </TerritoryInfluence>
-  <Vision>
-    <Range>40</Range>
-  </Vision>
   <VisualActor>
     <Actor>structures/mauryas/misc_structure_01.xml</Actor>
     <FoundationActor>structures/fndn_9x4.xml</FoundationActor>

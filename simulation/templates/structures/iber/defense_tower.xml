@@ -8,6 +8,9 @@
   <BuildingAI>
     <DefaultArrowCount>2</DefaultArrowCount>
   </BuildingAI>
+  <Population>
+    <Bonus>5</Bonus>
+  </Population>
   <Cost>
     <BuildTime>200</BuildTime>
     <Resources>
@@ -30,10 +33,6 @@
     <Civ>iber</Civ>
     <SpecificName>Dorre</SpecificName>
   </Identity>
-  <Loot>
-    <wood>10</wood>
-    <stone>50</stone>
-  </Loot>
   <Obstruction>
     <Static width="14.0" depth="14.0"/>
   </Obstruction>

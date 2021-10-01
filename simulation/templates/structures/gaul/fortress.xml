@@ -1,9 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_military_fortress">
+  <Population>
+    <Bonus>12</Bonus>
+  </Population>
   <Identity>
     <Civ>gaul</Civ>
     <SpecificName>Dunon</SpecificName>
   </Identity>
+  <ProductionQueue>
+    <Entities datatype="tokens">
+      units/{civ}/hero_brennus
+      units/{civ}/hero_viridomarus
+      units/{civ}/hero_vercingetorix
+      units/{civ}/champion_cavalry
+      units/{civ}/champion_infantry_swordsman
+    </Entities>
+    <Technologies datatype="tokens">
+      siege_attack
+      siege_armor
+      siege_cost_metal
+      siege_cost_wood
+    </Technologies>
+  </ProductionQueue>
   <Sound>
     <SoundGroups>
       <select>interface/select/building/sel_fortress.xml</select>

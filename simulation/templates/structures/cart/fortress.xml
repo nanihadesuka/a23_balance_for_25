@@ -17,7 +17,15 @@
       units/{civ}/hero_hamilcar
       units/{civ}/hero_hannibal
       units/{civ}/hero_maharbal
+      units/{civ}/champion_elephant
     </Entities>
+    <Technologies datatype="tokens">
+      siege_attack
+      siege_armor
+      siege_cost_metal
+      siege_cost_wood
+      siege_bolt_accuracy
+    </Technologies>
   </ProductionQueue>
   <VisualActor>
     <FoundationActor>structures/carthaginians/fndn_fortress.xml</FoundationActor>

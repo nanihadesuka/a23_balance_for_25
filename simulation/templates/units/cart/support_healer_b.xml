@@ -5,6 +5,7 @@
     <Phenotype>female</Phenotype>
     <SpecificName>Kehinit</SpecificName>
     <Icon>units/cart_support_healer.png</Icon>
+    <Rank>Basic</Rank>
   </Identity>
   <Promotion>
     <Entity>units/cart/support_healer_a</Entity>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Entity parent="template_structure_civic_temple">
+<Entity parent="structures/rome/temple">
   <Auras datatype="tokens">
     structures/loyalty_regen
   </Auras>

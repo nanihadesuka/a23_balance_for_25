@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_special">
+  <Population>
+    <Bonus>10</Bonus>
+  </Population>
   <Cost>
     <BuildTime>300</BuildTime>
     <Resources>
@@ -27,8 +30,8 @@
     <Icon>structures/palace.png</Icon>
   </Identity>
   <Loot>
-    <wood>40</wood>
-    <stone>80</stone>
+    <wood>50</wood>
+    <stone>100</stone>
   </Loot>
   <Obstruction>
     <Static width="38.5" depth="22.5"/>
@@ -43,11 +46,7 @@
   <TerritoryInfluence>
     <Root>true</Root>
     <Radius>48</Radius>
-    <Weight>40000</Weight>
   </TerritoryInfluence>
-  <Vision>
-    <Range>40</Range>
-  </Vision>
   <VisualActor>
     <Actor>structures/persians/palace.xml</Actor>
     <FoundationActor>structures/fndn_6x6.xml</FoundationActor>

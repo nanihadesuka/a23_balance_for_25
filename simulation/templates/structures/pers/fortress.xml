@@ -3,7 +3,19 @@
   <Identity>
     <Civ>pers</Civ>
     <SpecificName>Didā</SpecificName>
+    <Tooltip>Train Champion Cavalry and Construct Siege Rams.</Tooltip>
   </Identity>
+  <ProductionQueue>
+    <Entities datatype="tokens">
+      units/{civ}/champion_cavalry
+    </Entities>
+    <Technologies datatype="tokens">
+      siege_attack
+      siege_armor
+      siege_cost_metal
+      siege_cost_wood
+    </Technologies>
+  </ProductionQueue>
   <VisualActor>
     <Actor>structures/persians/fortress.xml</Actor>
   </VisualActor>

@@ -34,10 +34,11 @@
     <Classes datatype="tokens">CivSpecific</Classes>
     <VisibleClasses datatype="tokens">Pillar</VisibleClasses>
     <Icon>structures/ashoka_pillar.png</Icon>
+    <Tooltip>The famous pillar of Ashoka. Increases the walk speed of traders. Buildings in the territory of the monument do not decay.</Tooltip>
   </Identity>
   <Loot>
-    <stone>20</stone>
-    <metal>20</metal>
+    <stone>25</stone>
+    <metal>25</metal>
   </Loot>
   <Obstruction>
     <Static width="4" depth="4"/>
@@ -50,7 +51,9 @@
       <constructed>interface/complete/building/complete_iber_monument.xml</constructed>
     </SoundGroups>
   </Sound>
-  <TerritoryDecay disable=""/>
+  <TerritoryInfluence>
+    <Root>true</Root>
+  </TerritoryInfluence>
   <VisualActor>
     <Actor>props/structures/mauryas/ashoka_pillar.xml</Actor>
     <FoundationActor>structures/fndn_2x2.xml</FoundationActor>

@@ -4,22 +4,40 @@
     <PlacementType>land-shore</PlacementType>
     <Category>Wall</Category>
   </BuildRestrictions>
+  <Capturable>
+    <CapturePoints>1200</CapturePoints>
+  </Capturable>
+  <Cost>
+    <BuildTime>25</BuildTime>
+    <Resources>
+      <stone>20</stone>
+    </Resources>
+  </Cost>
   <Footprint>
     <Square width="6.0" depth="6.0"/>
     <Height>8.0</Height>
   </Footprint>
+  <Health>
+    <Max>3000</Max>
+    <SpawnEntityOnDeath>decay|rubble/rubble_stone_2x2</SpawnEntityOnDeath>
+  </Health>
   <Identity>
-    <GenericName>Wall</GenericName>
     <SelectionGroupName>template_structure_defensive_wall</SelectionGroupName>
+    <GenericName>Wall</GenericName>
     <Tooltip>Wall off your town for a stout defense.</Tooltip>
     <VisibleClasses datatype="tokens">Wall</VisibleClasses>
     <Icon>structures/wall.png</Icon>
     <RequiredTechnology>phase_town</RequiredTechnology>
   </Identity>
+  <Loot>
+    <wood>0</wood>
+    <stone>15</stone>
+  </Loot>
   <Obstruction>
     <Static width="6.0" depth="6.0"/>
   </Obstruction>
   <ProductionQueue disable=""/>
+  <RallyPoint disable=""/>
   <Repairable>
     <RepairTimeRatio>4.5</RepairTimeRatio>
   </Repairable>
@@ -29,9 +47,15 @@
       <constructed>interface/complete/building/complete_wall.xml</constructed>
     </SoundGroups>
   </Sound>
+  <TerritoryDecay>
+    <DecayRate>5.0</DecayRate>
+  </TerritoryDecay>
   <TerritoryInfluence>
     <Root>false</Root>
     <Radius>20</Radius>
     <Weight>65535</Weight>
   </TerritoryInfluence>
+  <Vision>
+    <Range>20</Range>
+  </Vision>
 </Entity>

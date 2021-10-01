@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_special">
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Pierce>35</Pierce>
+      </Damage>
+    </Entity>
+  </Resistance>
   <Auras datatype="tokens">
     structures/cart_super_dock_repair
   </Auras>
@@ -9,14 +16,18 @@
     <Category>Dock</Category>
   </BuildRestrictions>
   <Capturable>
-    <CapturePoints op="mul">4</CapturePoints>
+    <CapturePoints>2000</CapturePoints>
     <GarrisonRegenRate>10</GarrisonRegenRate>
   </Capturable>
+  <Population>
+    <Bonus>10</Bonus>
+  </Population>
   <Cost>
     <BuildTime>500</BuildTime>
     <Resources>
       <wood>300</wood>
       <stone>200</stone>
+      <metal>0</metal>
     </Resources>
   </Cost>
   <Footprint>
@@ -38,14 +49,14 @@
     <Civ>cart</Civ>
     <GenericName>Naval Shipyard</GenericName>
     <SpecificName>Cothon</SpecificName>
+    <VisibleClasses datatype="tokens">Naval Shipyard</VisibleClasses>
     <Tooltip>Build upon a shoreline in own, neutral, or allied territory. Acquire large tracts of territory. Territory root. Construct Warships and research technologies.</Tooltip>
     <Classes datatype="tokens">ConquestCritical CivSpecific</Classes>
-    <VisibleClasses datatype="tokens">Naval Shipyard</VisibleClasses>
     <Icon>structures/uber_dock.png</Icon>
   </Identity>
   <Loot>
-    <wood>60</wood>
-    <stone>40</stone>
+    <wood>75</wood>
+    <stone>50</stone>
   </Loot>
   <Obstruction>
     <Static width="42.0" depth="58.0"/>
@@ -61,17 +72,14 @@
       units/{civ}/ship_trireme
       units/{civ}/ship_quinquereme
     </Entities>
+    <Technologies datatype="tokens">
+      civbonuses/carthaginians/training_phoenician_naval_architects
+      civbonuses/carthaginians/special_exploration
+    </Technologies>
   </ProductionQueue>
   <RallyPointRenderer>
     <LinePassabilityClass>ship</LinePassabilityClass>
   </RallyPointRenderer>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Pierce>35</Pierce>
-      </Damage>
-    </Entity>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <select>interface/select/building/sel_dock.xml</select>

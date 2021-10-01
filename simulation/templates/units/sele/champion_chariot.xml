@@ -7,11 +7,12 @@
   <Identity>
     <Civ>sele</Civ>
     <Lang>greek</Lang>
+    <VisibleClasses datatype="tokens">Chariot</VisibleClasses>
     <GenericName>Scythed Chariot</GenericName>
     <SpecificName>Drepanèphoros</SpecificName>
     <VisibleClasses datatype="tokens">Chariot</VisibleClasses>
     <Icon>units/sele_champion_chariot.png</Icon>
-    <RequiredTechnology>unlock_champion_chariots</RequiredTechnology>
+    <RequiredTechnology>traditional_army_sele</RequiredTechnology>
   </Identity>
   <VisualActor>
     <Actor>units/seleucids/chariot_archer_c_m.xml</Actor>

@@ -3,7 +3,8 @@
   <Builder>
     <Entities datatype="tokens">
       structures/spart/syssiton
-      -structures/{civ}/wallset_stone
+      structures/spart/theater
+      structures/spart/royal_stoa
     </Entities>
   </Builder>
   <Identity>

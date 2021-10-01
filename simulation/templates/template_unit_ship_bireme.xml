@@ -4,18 +4,22 @@
     <Ranged>
       <AttackName>Bow</AttackName>
       <Damage>
-        <Pierce>35</Pierce>
+        <Hack>0.0</Hack>
+        <Pierce>35.0</Pierce>
+        <Crush>0.0</Crush>
       </Damage>
-      <MaxRange>45</MaxRange>
+      <MaxRange>45.0</MaxRange>
+      <MinRange>0.0</MinRange>
       <PrepareTime>1000</PrepareTime>
       <RepeatTime>2000</RepeatTime>
       <Projectile>
-        <Speed>100</Speed>
-        <Spread>2</Spread>
-        <Gravity>50</Gravity>
+        <Speed>100.0</Speed>
+        <Spread>2.0</Spread>
+        <Gravity>9.81</Gravity>
         <FriendlyFire>false</FriendlyFire>
         <LaunchPoint y="3"/>
       </Projectile>
+      <Delay>0</Delay>
       <PreferredClasses datatype="tokens">Ship Human</PreferredClasses>
     </Ranged>
   </Attack>
@@ -29,28 +33,33 @@
     <Population>2</Population>
     <BuildTime>20</BuildTime>
     <Resources>
-      <wood>120</wood>
-      <metal>60</metal>
+      <wood>125</wood>
+      <metal>50</metal>
     </Resources>
   </Cost>
   <GarrisonHolder>
     <Max>20</Max>
     <List datatype="tokens">Support Cavalry</List>
+    <EjectHealth>0</EjectHealth>
+    <BuffHeal>0</BuffHeal>
+    <LoadingRange>10</LoadingRange>
+    <Pickup>true</Pickup>
   </GarrisonHolder>
   <Health>
     <Max>800</Max>
   </Health>
   <Identity>
     <GenericName>Light Warship</GenericName>
-    <Tooltip>Garrison units for transport and to increase firepower.</Tooltip>
     <VisibleClasses datatype="tokens">Ranged Warship Bireme</VisibleClasses>
     <RequiredTechnology>phase_town</RequiredTechnology>
+    <Tooltip>Garrison units for transport and to increase firepower.</Tooltip>
   </Identity>
   <Loot>
-    <xp>80</xp>
-    <wood>24</wood>
-    <metal>12</metal>
+    <xp>75</xp>
+    <wood>25</wood>
+    <metal>15</metal>
   </Loot>
+  <ResourceGatherer disable=""/>
   <Sound>
     <SoundGroups>
       <attack_impact_ranged>attack/impact/arrow_impact.xml</attack_impact_ranged>
@@ -59,8 +68,6 @@
   </Sound>
   <UnitMotion>
     <WalkSpeed op="mul">1.55</WalkSpeed>
+    <RunMultiplier>1.55</RunMultiplier>
   </UnitMotion>
-  <Vision>
-    <Range>90</Range>
-  </Vision>
 </Entity>

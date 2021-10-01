@@ -4,8 +4,7 @@
     <Civ>brit</Civ>
     <GenericName>Brythonic Champion</GenericName>
     <SpecificName>Argos</SpecificName>
-    <Icon>units/brit_champion_infantry.png</Icon>
-    <RequiredTechnology>unlock_champion_infantry</RequiredTechnology>
+    <Icon>units/sele_champion_swordsman.png</Icon>
   </Identity>
   <VisualActor>
     <Actor>units/britons/infantry_swordsman_c.xml</Actor>

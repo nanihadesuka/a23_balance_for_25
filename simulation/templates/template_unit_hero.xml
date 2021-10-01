@@ -73,6 +73,7 @@
   </Sound>
   <TrainingRestrictions>
     <Category>Hero</Category>
+    <MatchLimit>1000</MatchLimit>
   </TrainingRestrictions>
   <Vision>
     <Range>88</Range>

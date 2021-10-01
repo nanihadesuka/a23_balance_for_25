@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_defensive_wall">
   <Cost>
-    <BuildTime>12</BuildTime>
+    <BuildTime>15</BuildTime>
     <Resources>
-      <stone>12</stone>
+      <stone>15</stone>
     </Resources>
   </Cost>
   <Health>
@@ -13,10 +13,6 @@
   <Identity>
     <Classes datatype="tokens">WallShort</Classes>
   </Identity>
-  <Loot>
-    <stone>3</stone>
-  </Loot>
-  <RallyPoint disable=""/>
   <VisualActor>
     <FoundationActor>structures/fndn_3x3_wall.xml</FoundationActor>
   </VisualActor>

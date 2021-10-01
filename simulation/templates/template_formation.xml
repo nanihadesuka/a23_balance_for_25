@@ -61,8 +61,8 @@
   </Trader>
   <UnitAI>
     <DefaultStance>aggressive</DefaultStance>
-    <FormationController>true</FormationController>
     <FleeDistance>12.0</FleeDistance>
+    <FormationController>true</FormationController>
     <CanGuard>true</CanGuard>
     <CanPatrol>true</CanPatrol>
     <PatrolWaitTime>2</PatrolWaitTime>

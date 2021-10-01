@@ -1,16 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_elephant_archer">
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack op="add">1.0</Hack>
+        <Pierce op="add">2.0</Pierce>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <Attack>
+    <Capture disable=""/>
+    <Ranged>
+      <Damage>
+        <Hack op="mul">1.5</Hack>
+        <Pierce op="mul">1.5</Pierce>
+        <Crush op="mul">1.5</Crush>
+      </Damage>
+      <RepeatTime op="mul">0.75</RepeatTime>
+    </Ranged>
+  </Attack>
+  <Cost>
+    <Resources>
+      <food>200</food>
+      <wood>80</wood>
+      <metal>20</metal>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max op="mul">2.0</Max>
+  </Health>
   <Identity>
     <Civ>maur</Civ>
     <GenericName>Elephant Archer</GenericName>
-    <SpecificName>Vachii Gaja</SpecificName>
-    <SelectionGroupName>units/maur/elephant_archer_b</SelectionGroupName>
     <Icon>units/maur_elephant_archer.png</Icon>
     <RequiredTechnology>phase_town</RequiredTechnology>
+    <SelectionGroupName>units/maur/elephant_archer_b</SelectionGroupName>
+    <SpecificName>Vachii Gaja</SpecificName>
+    <VisibleClasses datatype="tokens">Elephant</VisibleClasses>
   </Identity>
+  <Loot>
+    <xp>260</xp>
+    <food>25</food>
+    <wood>10</wood>
+    <stone>0</stone>
+    <metal>5</metal>
+  </Loot>
   <Promotion>
     <Entity>units/maur/elephant_archer_a</Entity>
   </Promotion>
+  <ResourceGatherer disable=""/>
+  <UnitMotion>
+    <PassabilityClass>large</PassabilityClass>
+    <WalkSpeed op="mul">0.5</WalkSpeed>
+    <RunMultiplier>0.5</RunMultiplier>
+  </UnitMotion>
   <VisualActor>
     <Actor>units/mauryas/elephantry_archer_b_m.xml</Actor>
   </VisualActor>

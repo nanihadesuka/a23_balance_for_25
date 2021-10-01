@@ -1,5 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit">
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>1</Hack>
+        <Pierce>50</Pierce>
+        <Crush>5</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <Capturable>
+    <CapturePoints>500</CapturePoints>
+    <RegenRate>10</RegenRate>
+    <GarrisonRegenRate>10</GarrisonRegenRate>
+  </Capturable>
   <Cost>
     <Population>3</Population>
   </Cost>

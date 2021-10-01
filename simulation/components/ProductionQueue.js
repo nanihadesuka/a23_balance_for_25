@@ -622,8 +622,6 @@ ProductionQueue.prototype.ResetQueue = function()
 {
 	while (this.queue.length)
 		this.RemoveItem(this.queue[0].id);
-
-	this.DisableAutoQueue();
 };
 
 /*
@@ -897,11 +895,11 @@ ProductionQueue.prototype.ProgressTimeout = function(data, lateness)
 		{
 			if (!this.AddItem(item.unitTemplate, "unit", item.count, item.metadata))
 			{
-				this.DisableAutoQueue();
+				
 				const cmpGUIInterface = Engine.QueryInterface(SYSTEM_ENTITY, IID_GuiInterface);
 				cmpGUIInterface.PushNotification({
 					"players": [cmpPlayer.GetPlayerID()],
-					"message": markForTranslation("Could not auto-queue unit, de-activating."),
+					"message": markForTranslation("Could not auto-queue unit"),
 					"translateMessage": true
 				});
 			}

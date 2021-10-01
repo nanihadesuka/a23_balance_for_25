@@ -36,6 +36,9 @@
       units/{native}/infantry_maceman_merc_b
       units/{native}/infantry_javelineer_merc_b
     </Entities>
+    <Technologies datatype="tokens">
+      upgrade_rank_advanced_mercenary
+    </Technologies>
   </ProductionQueue>
   <TerritoryDecay>
     <DecayRate>1</DecayRate>

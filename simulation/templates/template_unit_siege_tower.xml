@@ -4,21 +4,23 @@
     <Ranged>
       <AttackName>Bow</AttackName>
       <Damage>
-        <Pierce>12</Pierce>
+        <Hack>0.0</Hack>
+        <Pierce>12.0</Pierce>
         <Crush>2.5</Crush>
       </Damage>
-      <MaxRange>55</MaxRange>
-      <MinRange>10</MinRange>
+      <MaxRange>55.0</MaxRange>
+      <MinRange>10.0</MinRange>
       <ElevationBonus>10</ElevationBonus>
       <PrepareTime>1200</PrepareTime>
       <RepeatTime>2000</RepeatTime>
       <Projectile>
-        <Speed>100</Speed>
-        <Spread>2</Spread>
-        <Gravity>50</Gravity>
+        <Speed>75.0</Speed>
+        <Spread>2.0</Spread>
+        <Gravity>9.81</Gravity>
         <FriendlyFire>false</FriendlyFire>
         <LaunchPoint y="3"/>
       </Projectile>
+      <Delay>0</Delay>
       <PreferredClasses datatype="tokens">Human</PreferredClasses>
       <RangeOverlay>
         <LineTexture>outline_border.png</LineTexture>
@@ -60,11 +62,6 @@
     <GenericName>Siege Tower</GenericName>
     <Tooltip>Garrison units for transport and to increase firepower.</Tooltip>
   </Identity>
-  <Loot>
-    <xp>250</xp>
-    <wood>100</wood>
-    <metal>60</metal>
-  </Loot>
   <Selectable>
     <Overlay>
       <Texture>
@@ -86,15 +83,9 @@
   <StatusBars>
     <HeightOffset>12.0</HeightOffset>
   </StatusBars>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Pierce>50</Pierce>
-      </Damage>
-    </Entity>
-  </Resistance>
   <UnitMotion>
     <WalkSpeed op="mul">0.7</WalkSpeed>
+    <RunMultiplier>0.7</RunMultiplier>
   </UnitMotion>
   <Vision>
     <Range>80</Range>

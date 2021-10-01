@@ -2,16 +2,12 @@
 <Entity parent="template_unit_infantry_melee_swordsman">
   <Builder>
     <Entities datatype="tokens">
+      -structures/wallset_palisade
       structures/rome/army_camp
+      structures/rome/wallset_siege
       structures/rome/temple_vesta
     </Entities>
   </Builder>
-  <Health>
-    <DamageVariants>
-      <lightdamage>0.85</lightdamage>
-      <mediumdamage>0.45</mediumdamage>
-    </DamageVariants>
-  </Health>
   <Identity>
     <Civ>rome</Civ>
     <Lang>latin</Lang>

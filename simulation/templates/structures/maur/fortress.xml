@@ -3,7 +3,27 @@
   <Identity>
     <Civ>maur</Civ>
     <SpecificName>Durg</SpecificName>
+    <Tooltip>Train heroes and champion units.</Tooltip>
   </Identity>
+  <ProductionQueue>
+    <Entities datatype="tokens">
+      units/{civ}/hero_chanakya
+      units/{civ}/hero_chandragupta
+      units/{civ}/hero_ashoka
+      units/{civ}/champion_infantry_maceman
+      units/{civ}/champion_maiden
+      units/{civ}/champion_chariot
+      -units/{civ}/siege_ballista_packed
+      -units/{civ}/siege_scorpio_packed
+      -units/{civ}/siege_oxybeles_packed
+      -units/{civ}/siege_lithobolos_packed
+      -units/{civ}/siege_ram
+      -units/{civ}/siege_tower
+    </Entities>
+    <Technologies datatype="tokens">
+      attack_soldiers_will
+    </Technologies>
+  </ProductionQueue>
   <VisualActor>
     <Actor>structures/mauryas/fortress.xml</Actor>
   </VisualActor>

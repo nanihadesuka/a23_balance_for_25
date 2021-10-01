@@ -29,9 +29,6 @@
       </Texture>
     </Overlay>
   </Selectable>
-  <TrainingRestrictions>
-    <Category>Animal</Category>
-  </TrainingRestrictions>
   <TreasureCollector disable=""/>
   <UnitAI>
     <DefaultStance>passive</DefaultStance>

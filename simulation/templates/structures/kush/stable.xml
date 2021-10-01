@@ -11,6 +11,16 @@
   <Obstruction>
     <Static width="20.0" depth="22.0"/>
   </Obstruction>
+  <ProductionQueue>
+    <Entities datatype="tokens">
+      units/{civ}/cavalry_javelineer_b
+      -units/{civ}/infantry_javelineer_b
+      -units/{civ}/infantry_slinger_b
+      -units/{civ}/infantry_archer_b
+    </Entities>
+    <Technologies datatype="tokens">
+    </Technologies>
+  </ProductionQueue>
   <VisualActor>
     <Actor>structures/kushites/stable.xml</Actor>
     <FoundationActor>structures/fndn_6x7.xml</FoundationActor>

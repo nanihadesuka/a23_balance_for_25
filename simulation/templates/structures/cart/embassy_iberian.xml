@@ -2,7 +2,9 @@
 <Entity parent="template_structure_military_embassy">
   <Cost>
     <Resources>
+      <wood>0</wood>
       <stone>200</stone>
+      <metal>0</metal>
     </Resources>
   </Cost>
   <Identity>
@@ -24,6 +26,9 @@
       units/{native}/infantry_slinger_iber_b
       units/{native}/cavalry_swordsman_iber_b
     </Entities>
+    <Technologies datatype="tokens">
+      upgrade_rank_advanced_mercenary
+    </Technologies>
   </ProductionQueue>
   <VisualActor>
     <Actor>structures/carthaginians/embassy_iberian.xml</Actor>

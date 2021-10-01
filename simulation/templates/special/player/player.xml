@@ -15,7 +15,7 @@
   </BattleDetection>
   <EntityLimits>
     <Limits>
-      <Animal>50</Animal>
+      <Animal>500</Animal>
       <CivilCentre>1</CivilCentre>
       <Fortress>10</Fortress>
       <Gladiator>0</Gladiator>
@@ -25,6 +25,7 @@
       <Lighthouse>1</Lighthouse>
       <Monument>5</Monument>
       <Palace>2</Palace>
+      <Stoa>2</Stoa>
       <Pillar>0</Pillar>
       <PyramidLarge>2</PyramidLarge>
       <PyramidSmall>4</PyramidSmall>

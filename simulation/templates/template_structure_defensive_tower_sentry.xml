@@ -1,13 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_defensive_tower">
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack op="add">-5</Hack>
+        <Pierce op="add">-5</Pierce>
+        <Crush op="add">-2</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
   <Attack>
     <Ranged>
+      <Damage>
+        <Pierce>9</Pierce>
+      </Damage>
+      <MaxRange>70</MaxRange>
+      <MinRange>10</MinRange>
       <ElevationBonus>9</ElevationBonus>
     </Ranged>
   </Attack>
-  <BuildingAI>
-    <MaxArrowCount>3</MaxArrowCount>
-  </BuildingAI>
   <Cost>
     <BuildTime>40</BuildTime>
     <Resources>
@@ -22,15 +33,15 @@
     <Max>3</Max>
   </GarrisonHolder>
   <Health>
-    <Max>400</Max>
+    <Max>500</Max>
   </Health>
   <Identity>
     <GenericName>Sentry Tower</GenericName>
     <SelectionGroupName>template_structure_defensive_tower_sentry</SelectionGroupName>
-    <Tooltip>Garrison Infantry for additional arrows. Needs the “Murder Holes” technology to protect its foot.</Tooltip>
-    <VisibleClasses datatype="tokens">SentryTower</VisibleClasses>
     <Icon>structures/sentry_tower.png</Icon>
     <RequiredTechnology>phase_village</RequiredTechnology>
+    <VisibleClasses datatype="tokens">SentryTower</VisibleClasses>
+    <Tooltip>Garrison Infantry for additional arrows. Needs the “Murder Holes” technology to protect its foot.</Tooltip>
   </Identity>
   <Loot>
     <wood>20</wood>

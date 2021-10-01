@@ -4,6 +4,18 @@
     <Civ>pers</Civ>
     <SpecificName>Padgan</SpecificName>
   </Identity>
+  <ProductionQueue>
+    <Entities datatype="tokens">
+      -units/{civ}/cavalry_swordsman_b
+      -units/{civ}/cavalry_spearman_b
+      -units/{civ}/cavalry_archer_b
+      -units/{civ}/cavalry_javelineer_b
+    </Entities>
+    <Technologies datatype="tokens">
+      civbonuses/persians/training_levy_infantry
+      civbonuses/persians/special_archery_tradition
+    </Technologies>
+  </ProductionQueue>
   <VisualActor>
     <Actor>structures/persians/barracks.xml</Actor>
   </VisualActor>

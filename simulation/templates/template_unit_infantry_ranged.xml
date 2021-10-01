@@ -28,6 +28,7 @@
       </Projectile>
       <PrepareTime>750</PrepareTime>
       <RepeatTime>1250</RepeatTime>
+      <Delay>0</Delay>
       <PreferredClasses datatype="tokens">Human</PreferredClasses>
     </Ranged>
   </Attack>

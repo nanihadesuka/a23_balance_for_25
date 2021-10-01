@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="civ/athen|template_unit_infantry_ranged_slinger">
-  <Identity>
+  <Builder>
+    <Entities datatype="tokens">
+      structures/athen/gymnasium
+      structures/athen/theater
+      structures/athen/prytaneion
+      structures/athen/royal_stoa
+    </Entities>
+  </Builder>  <Identity>
     <SelectionGroupName>units/athen/infantry_slinger_b</SelectionGroupName>
     <GenericName>Athenian Slinger Militia</GenericName>
     <SpecificName>Psilòs Athēnaîos</SpecificName>

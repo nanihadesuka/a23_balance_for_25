@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_military_barracks">
+  <Population>
+    <Bonus>4</Bonus>
+  </Population>
   <Cost>
     <Resources>
       <wood>300</wood>
@@ -17,13 +20,18 @@
     <Civ>brit</Civ>
     <SpecificName>Coriosessa</SpecificName>
   </Identity>
-  <Loot>
-    <wood>60</wood>
-    <stone>0</stone>
-  </Loot>
   <Obstruction>
     <Static width="20.0" depth="20.0"/>
   </Obstruction>
+  <ProductionQueue>
+    <Entities datatype="tokens">
+      units/{civ}/champion_infantry_swordsman_barracks
+      units/{civ}/champion_chariot_barracks
+    </Entities>
+    <Technologies datatype="tokens">
+      unlock_champion_units
+    </Technologies>
+  </ProductionQueue>
   <VisualActor>
     <Actor>structures/britons/barracks.xml</Actor>
     <FoundationActor>structures/fndn_6x6.xml</FoundationActor>

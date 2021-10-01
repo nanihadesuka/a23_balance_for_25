@@ -2,6 +2,12 @@
 <Entity parent="template_structure_defensive_tower">
   <Attack>
     <Ranged>
+      <AttackName>Bow</AttackName>
+      <Damage>
+        <Pierce>12</Pierce>
+      </Damage>
+      <MaxRange>76</MaxRange>
+      <MinRange>10</MinRange>
       <ElevationBonus>15</ElevationBonus>
     </Ranged>
   </Attack>
@@ -24,14 +30,14 @@
   </Health>
   <Identity>
     <GenericName>Stone Tower</GenericName>
-    <SelectionGroupName>template_structure_defensive_tower_stone</SelectionGroupName>
     <Tooltip>Garrison Infantry for additional arrows. Needs the “Murder Holes” technology to protect its foot.</Tooltip>
+    <SelectionGroupName>template_structure_defensive_tower_stone</SelectionGroupName>
     <VisibleClasses datatype="tokens">StoneTower</VisibleClasses>
     <Icon>structures/defense_tower.png</Icon>
     <RequiredTechnology>phase_town</RequiredTechnology>
   </Identity>
   <Loot>
-    <wood>20</wood>
+    <wood>0</wood>
     <stone>20</stone>
   </Loot>
   <Obstruction>
@@ -43,7 +49,7 @@
       tower_crenellations
       tower_range
       tower_murderholes
-      tower_health
+      tower_armour
     </Technologies>
   </ProductionQueue>
   <TerritoryInfluence>

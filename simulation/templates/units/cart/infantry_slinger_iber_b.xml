@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Entity parent="merc_inf|template_unit_infantry_ranged_slinger">
+<Entity parent="template_unit_infantry_ranged_slinger">
   <Builder>
     <Entities datatype="tokens">
       structures/{civ}/super_dock
@@ -8,13 +8,20 @@
       structures/{civ}/embassy_italic
     </Entities>
   </Builder>
+  <Cost>
+    <Resources>
+      <food op="add">-25</food>
+      <metal op="add">25</metal>
+    </Resources>
+  </Cost>
   <Identity>
     <Civ>cart</Civ>
     <GenericName>Balearic Slinger</GenericName>
-    <SpecificName>Qallāʿ Ibušimi</SpecificName>
-    <SelectionGroupName>units/cart/infantry_slinger_iber_b</SelectionGroupName>
     <Icon>units/cart_infantry_slinger.png</Icon>
     <RequiredTechnology>phase_town</RequiredTechnology>
+    <SelectionGroupName>units/cart/infantry_slinger_iber_b</SelectionGroupName>
+    <SpecificName>Qallāʿ Ibušimi</SpecificName>
+    <VisibleClasses datatype="tokens">Mercenary</VisibleClasses>
   </Identity>
   <Promotion>
     <Entity>units/cart/infantry_slinger_iber_a</Entity>

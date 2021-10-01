@@ -5,33 +5,26 @@
     <PlacementType>shore</PlacementType>
     <Category>Lighthouse</Category>
   </BuildRestrictions>
-  <Cost>
-    <BuildTime>200</BuildTime>
-    <Resources>
-      <stone>200</stone>
-      <metal>200</metal>
-    </Resources>
-  </Cost>
   <Footprint replace="">
     <Circle radius="14.0"/>
     <Height>8.0</Height>
   </Footprint>
   <Health>
-    <Max>2000</Max>
     <SpawnEntityOnDeath>decay|rubble/rubble_stone_4x6</SpawnEntityOnDeath>
   </Health>
   <Identity>
     <Civ>ptol</Civ>
     <GenericName>Lighthouse</GenericName>
     <SpecificName>Pharos</SpecificName>
-    <Tooltip>Build upon a shoreline in own, neutral, or allied territory. Very large vision range.</Tooltip>
     <Classes datatype="tokens">CivSpecific</Classes>
     <VisibleClasses datatype="tokens">Lighthouse</VisibleClasses>
+    <Tooltip>Build along the shore to reveal the shorelines over the entire map. Very large vision range: 180 meters.</Tooltip>
     <Icon>structures/lighthouse.png</Icon>
+    <RequiredTechnology>phase_town</RequiredTechnology>
   </Identity>
   <Loot>
-    <stone>40</stone>
-    <metal>40</metal>
+    <stone>50</stone>
+    <metal>50</metal>
   </Loot>
   <Obstruction>
     <Static width="20.0" depth="25.0"/>
@@ -48,8 +41,12 @@
     </SoundGroups>
   </Sound>
   <TerritoryDecay disable=""/>
+  <TerritoryInfluence>
+    <Radius>0</Radius>
+  </TerritoryInfluence>
   <Vision>
-    <Range>200</Range>
+    <Range>180</Range>
+    <RevealShore>true</RevealShore>
   </Vision>
   <VisualActor>
     <Actor>structures/ptolemies/lighthouse.xml</Actor>

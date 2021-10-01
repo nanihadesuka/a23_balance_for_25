@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_military_fortress">
+  <Population>
+    <Bonus>15</Bonus>
+  </Population>
+  <Cost>
+    <BuildTime op="mul">1.5</BuildTime>
+    <Resources>
+      <stone>1200</stone>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>6000</Max>
+  </Health>
   <Identity>
     <Civ>iber</Civ>
     <SpecificName>Castro</SpecificName>
@@ -13,7 +25,15 @@
       units/{civ}/hero_caros
       units/{civ}/hero_indibil
       units/{civ}/hero_viriato
+      units/{civ}/champion_infantry_swordsman
+      units/{civ}/champion_cavalry
     </Entities>
+    <Technologies datatype="tokens">
+      siege_attack
+      siege_armor
+      siege_cost_metal
+      siege_cost_wood
+    </Technologies>
   </ProductionQueue>
   <VisualActor>
     <Actor>structures/iberians/fortress.xml</Actor>
